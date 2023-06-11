@@ -6,9 +6,9 @@ import NavOption from "./NavOption";
 const Navbar = () => {
   return (
     <>
-      <div className=" w-full h-[80px]  px-32 py-[12px] ">
+      <div className=" w-full md:h-[80px]  px-32 pt-0 md:py-[12px] ">
         {/* Navbar contact bar */}
-        <div>
+        <div className=" hidden md:block ">
           <div className=" flex items-center justify-between">
             <div className=" flex items-center text-white gap-x-4  ">
               <p>Follow us:-</p>
