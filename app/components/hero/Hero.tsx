@@ -7,7 +7,7 @@ import HeroCarasol from "./HeroCarasol";
 
 const Hero = () => {
   return (
-    <div className=" w-full h-[800px] overflow-hidden bg-slate-300 relative ">
+    <div className=" w-full h-[900px] overflow-hidden bg-slate-300 relative ">
       <HeroCarasol />
       <div className=" absolute bottom-0 z-40 w-full   ">
         <div className=" px-32 mx-auto flex items-center justify-center gap-x-10 ">
@@ -15,7 +15,7 @@ const Hero = () => {
             <div className=" flex gap-x-5 text-white items-start ">
               <Image src={sveIcon1} alt="" className=" w-[70px]" />
               <div>
-                <h2 className=" text-xl font-bold mb-2 ">Education Services</h2>
+                <h2 className=" text-xl font-bold mb-3 ">Education Services</h2>
                 <p className=" ">
                   Seamlessly visualize quality ellectual capital without
                   superior collaboration and idea sharing listically
@@ -28,11 +28,15 @@ const Hero = () => {
             </div>
             <div></div>
           </div>
-          <div className=" bg-secoundary p-7 cursor-pointer ">
+          <div className=" bg-secoundary p-7   cursor-pointer ">
             <div className=" flex gap-x-5 text-white items-start ">
-              <Image src={sveIcon2} alt="" className=" w-[70px]" />
+              <Image
+                src={sveIcon2}
+                alt=""
+                className=" w-[70px] h-full bg-cover"
+              />
               <div>
-                <h2 className=" text-xl font-bold mb-2 ">International Hubs</h2>
+                <h2 className=" text-xl font-bold mb-3 ">International Hubs</h2>
                 <p className=" ">
                   Seamlessly visualize quality ellectual capital without
                   superior collaboration and idea sharing listically

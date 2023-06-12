@@ -1,12 +1,12 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import hero1 from "../../images/hero1.jpg";
 import hero2 from "../../images/hero2.jpg";
-import hero3 from "../../images/hero3.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -17,9 +17,6 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import Link from "next/link";
 import { Keyboard, Mousewheel, Navigation, Pagination } from "swiper";
-const setToggle = () => {
-  console.log("Click");
-};
 
 const HeroCarasol = () => {
   return (
@@ -40,7 +37,16 @@ const HeroCarasol = () => {
           <div>
             <div className="">
               <Image src={hero1} alt="" className=" relative" />
-              <div className=" px-32 top-[150px] absolute">
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, x: -75 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
+                className=" px-32 top-[170px] absolute"
+              >
                 <div className=" space-y-9">
                   <div className=" flex items-center gap-x-5 ">
                     <p className=" uppercase     text-white font-semibold text-xl ">
@@ -85,7 +91,7 @@ const HeroCarasol = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </SwiperSlide>
@@ -94,16 +100,14 @@ const HeroCarasol = () => {
             <Image src={hero2} alt="" />
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <Image src={hero3} alt="" className=" h-full object-cover" />
+
+        <div className="">
+          <div className=" top-[40%] left-[40px] button-next-slide cursor-pointer absolute z-20">
+            <IoIosArrowForward className="dark:bg-white rounded-full h-[45px] w-[45px] p-2 text-gray-900 hover:bg-secoundary hover:text-white transition" />
           </div>
-        </SwiperSlide>
-        <div className=" top-[50%] left-0  button-next-slide cursor-pointer absolute z-20  ">
-          <IoIosArrowBack className="  dark:bg-white rounded-full h-[45px] w-[45px] p-2 text-gray-900 hover:bg-secoundary hover:text-white transition ml-5" />
-        </div>
-        <div className=" top-[50%] md:right-1 right-0 button-prev-slide cursor-pointer absolute z-20 ">
-          <IoIosArrowForward className="  dark:bg-white rounded-full h-[45px] w-[45px] p-2 text-gray-900 hover:bg-secoundary hover:text-white transition mr-5" />
+          <div className=" top-[40%] right-[40px] button-prev-slide cursor-pointer absolute z-20">
+            <IoIosArrowBack className="dark:bg-white rounded-full h-[45px] w-[45px] p-2 text-gray-900 hover:bg-secoundary hover:text-white transition mr-5" />
+          </div>
         </div>
       </Swiper>
     </>
