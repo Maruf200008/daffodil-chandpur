@@ -176,7 +176,8 @@ const NavOption = () => {
         </div>
       </div>
 
-      <div className="bg-slate-200  p-4 relative md:hidden">
+      {/* mobile responsive */}
+      <div className="bg-slate-200 z-50  p-4 relative md:hidden">
         <div className=" flex items-center justify-between ">
           <Image src={logo} alt="logo" className=" w-[150px]" />
           <div>
@@ -197,7 +198,7 @@ const NavOption = () => {
         </div>
         <div>
           <ul
-            className={`w-[380px] h absolute -z-20 flex-col transition-all ease-in  py-5 stiky bg-white shadow-lg shadow-gray-200 gap-y-5 h-[300px] px-7 text-gray-800 top-0 flex ml-8  duration-500 ${
+            className={`w-[380px] h absolute  flex-col transition-all ease-in  py-5 stiky bg-white  gap-y-5 h-[300px] px-7 text-gray-800 top-0 flex ml-8  duration-500 ${
               toggle ? " top-[71px]" : "top-[-350px]  overflow-y-scroll"
             }`}
           >
