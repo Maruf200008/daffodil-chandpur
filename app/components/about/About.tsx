@@ -9,8 +9,8 @@ import aiImagee from "../../images/an-img-02.png";
 
 const About = () => {
   return (
-    <div className=" bg-slate-200 md:py-28 px-32 relative">
-      <div className=" grid grid-cols-2 gap-x-20">
+    <div className=" bg-slate-200 py-10 md:py-28 md:px-32 px-10 relative">
+      <div className=" grid md:grid-cols-2 gap-y-10 gap-x-20">
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -75 }}
@@ -19,9 +19,9 @@ const About = () => {
           className="flex items-start"
         >
           <div>
-            <Image src={aboutImg1} alt="" />
+            <Image src={aboutImg1} alt="" className="" />
           </div>
-          <div className=" ml-[-290px]  bg-primary rounded-lg w-[280px] relative h-[130px] flex items-center flex-col justify-center text-white overflow-hidden">
+          <div className=" hidden  ml-[-290px]  bg-primary rounded-lg w-[280px] relative h-[130px] md:flex items-center flex-col justify-center text-white overflow-hidden">
             <div className=" z-10 absolute w-full h-[120px] top-0 bg-secoundary"></div>
             <div className=" z-40 text-center">
               <h2 className=" text-4xl font-bold">25 +</h2>
@@ -34,14 +34,14 @@ const About = () => {
           initial={{ opacity: 0, x: 75 }}
           animate="visible"
           transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
-          className=" space-y-5"
+          className=" space-y-3"
         >
           <div className=" flex items-center text-secoundary gap-x-3">
             <LuGraduationCap size={30} />
-            <p className=" text-xl font-semibold">About Our University</p>
+            <p className="  font-semibold  md:text-xl">About Our University</p>
           </div>
 
-          <h2 className=" text-[50px] font-bold text-gray-800">
+          <h2 className=" text-4xl md:text-[50px] leading-[70px] font-bold text-gray-800">
             A Few Words About the University
           </h2>
 
@@ -57,9 +57,9 @@ const About = () => {
             global business range ployment employer readings from religious
             texts or literature are also commonly inc compliance.
           </p>
-          <div className=" flex items-center gap-x-3">
+          <div className=" flex flex-col  md:flex-row items-center gap-y-5 mt-5 md:mt-0 gap-x-3">
             <div className=" flex gap-x-3">
-              <div className=" bg-secoundary h-[60px] w-[100px] rounded-full flex items-center justify-center text-xl text-white font-bold ">
+              <div className=" bg-secoundary h-[50px] w-[60px] md:h-[60px] md:w-[100px] rounded-full flex items-center justify-center text-xl text-white font-bold ">
                 01
               </div>
               <div className=" space-y-3">
@@ -72,7 +72,7 @@ const About = () => {
               </div>
             </div>
             <div className=" flex gap-x-3">
-              <div className=" bg-secoundary h-[60px] w-[100px] rounded-full flex items-center justify-center text-xl text-white font-bold ">
+              <div className=" bg-secoundary h-[50px] w-[60px] md:h-[60px] md:w-[100px] rounded-full flex items-center justify-center text-xl text-white font-bold">
                 02
               </div>
               <div className=" space-y-3">
@@ -113,7 +113,7 @@ const About = () => {
           hidden: { opacity: 0, y: -75 },
           visible: { opacity: 1, y: -10 },
         }}
-        className="absolute bottom-0 right-0 w-[450px]"
+        className="absolute bottom-0 right-0 w-[450px] hidden md:block"
       >
         <Image src={aiImagee} alt="" />
       </motion.div>
