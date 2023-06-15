@@ -1,4 +1,13 @@
-import { About, Courses, Hero, Navbar } from "./components";
+import {
+  About,
+  ContactUs,
+  Courses,
+  Events,
+  Features,
+  Hero,
+  Navbar,
+  Scholarship,
+} from "./components";
 
 export default function Home() {
   return (
@@ -7,6 +16,10 @@ export default function Home() {
       <Hero />
       <About />
       <Courses />
+      <Features />
+      <Events />
+      <Scholarship />
+      <ContactUs />
     </div>
   );
 }

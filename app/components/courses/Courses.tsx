@@ -80,19 +80,23 @@ const Courses = () => {
         </div>
       </div>
       <Swiper
-        slidesPerView={3}
+        // Responsive breakpoints
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+        }}
         spaceBetween={30}
         loop={true}
         navigation={{
           nextEl: ".button-next-slide",
           prevEl: ".button-prev-slide",
         }}
-        // breakpoints={
-        //     0: {
-        //         slidesPerView: 1,
-        //     },
-
-        // }
         pagination={true}
         modules={[Navigation]}
         className="mySwiper"
