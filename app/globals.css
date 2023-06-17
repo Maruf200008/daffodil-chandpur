@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .accordion-header {
+    @apply cursor-pointer;
+  }
+  .accordion-body {
+    @apply max-h-0  transition-all duration-200 ease-out;
+  }
+}
+
 .second-header::before {
   content: "";
   height: 80px;

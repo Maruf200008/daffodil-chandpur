@@ -1,8 +1,28 @@
 "use client";
-import { useState } from "react";
 import AccordionMenu from "./AccordionMenu";
 const ContactUs = () => {
-  const [toggle, setToggle] = useState(false);
+  const accordionData = [
+    {
+      title: "01 Cras turpis felis, elementum sed mi at arcu ?",
+      desc: "Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.",
+    },
+    {
+      title: "02 Vestibulum nibh risus, in neque eleifendulputate sem ?",
+      desc: "Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.",
+    },
+    {
+      title: "03 Donec maximus, sapien id auctor ornare ?",
+      desc: "Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.",
+    },
+    {
+      title: "04 Vestibulum nibh risus, in neque eleifendulputate sem ?",
+      desc: "Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.",
+    },
+    {
+      title: "05 Donec maximus, sapien id auctor ornare ?",
+      desc: "Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.",
+    },
+  ];
   return (
     <div className="py-10 md:px-32 px-10 mb-20">
       <div className=" flex gap-x-10">
@@ -15,7 +35,9 @@ const ContactUs = () => {
             service, typically one that involves a organizing transactions.
           </p>
           <div className="">
-            <AccordionMenu />
+            {accordionData.map((data, index) => (
+              <AccordionMenu key={index} data={data} />
+            ))}
           </div>
         </div>
         <div></div>
