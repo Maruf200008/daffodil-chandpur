@@ -7,6 +7,8 @@ import {
   Hero,
   Navbar,
   Scholarship,
+  Testimonial,
+  WeAreDifrrent,
 } from "./components";
 
 export default function Home() {
@@ -20,6 +22,8 @@ export default function Home() {
       <Events />
       <Scholarship />
       <ContactUs />
+      <WeAreDifrrent />
+      <Testimonial />
     </div>
   );
 }

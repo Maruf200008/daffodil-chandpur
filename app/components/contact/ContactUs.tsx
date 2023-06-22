@@ -24,9 +24,9 @@ const ContactUs = () => {
     },
   ];
   return (
-    <div className="py-10 md:px-32 px-10 mb-20">
-      <div className=" flex gap-x-10">
-        <div className=" space-y-5 w-[800px] ">
+    <div className="py-10 px-28 mb-20">
+      <div className=" grid grid-cols-2 gap-x-20">
+        <div className=" space-y-5">
           <h2 className=" text-[40px] font-bold">
             Get every single answer here.
           </h2>
@@ -40,7 +40,39 @@ const ContactUs = () => {
             ))}
           </div>
         </div>
-        <div></div>
+        <div className=" ">
+          <div className="bg-[#032e3f] px-16 py-10 rounded-md mx-10">
+            <h2 className="text-[30px] text-white font-bold">
+              Make An Contact
+            </h2>
+            <form action="" className=" mt-10 text-[14px] space-y-8">
+              <input
+                type="text"
+                className="rounded-md w-full py-3 px-3 focus:outline-none"
+                placeholder="Your Name"
+              />
+              <input
+                type="email"
+                className="rounded-md w-full py-3 px-3 focus:outline-none"
+                placeholder="Your Email"
+              />
+              <input
+                type="phone"
+                className="rounded-md w-full py-3 px-3 focus:outline-none"
+                placeholder="Your Phone"
+              />
+              <textarea
+                name="message"
+                rows="7"
+                className=" focus:outline-none w-full rounded-md px-3 py-2 resize-none"
+                placeholder="Message"
+              />
+              <button className=" bg-secoundary px-7 py-4 transition text-white hover:bg-primary rounded-md">
+                Submit Now
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   );
