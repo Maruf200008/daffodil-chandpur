@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import hero1 from "../../images/hero1.jpg";
 import hero2 from "../../images/hero2.jpg";
 // Import Swiper React components
@@ -165,15 +164,6 @@ const HeroCarasol = () => {
             </div>
           </div>
         </SwiperSlide>
-
-        <div className=" hidden md:block ">
-          <div className="  top-[40%] left-[40px] button-next-slide cursor-pointer absolute z-20">
-            <IoIosArrowForward className="dark:bg-white rounded-full h-[45px] w-[45px] p-2 text-gray-900 hover:bg-secoundary hover:text-white transition" />
-          </div>
-          <div className=" top-[40%] right-[40px] button-prev-slide cursor-pointer absolute z-20">
-            <IoIosArrowBack className="dark:bg-white rounded-full h-[45px] w-[45px] p-2 text-gray-900 hover:bg-secoundary hover:text-white transition mr-5" />
-          </div>
-        </div>
       </Swiper>
     </>
   );

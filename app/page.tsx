@@ -7,6 +7,7 @@ import {
   Hero,
   Navbar,
   Scholarship,
+  SearchForCourses,
   Testimonial,
   WeAreDifrrent,
 } from "./components";
@@ -24,6 +25,7 @@ export default function Home() {
       <ContactUs />
       <WeAreDifrrent />
       <Testimonial />
+      <SearchForCourses />
     </div>
   );
 }
