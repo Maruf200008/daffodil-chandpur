@@ -1,3 +1,5 @@
+import { BsArrowRight } from "react-icons/bs";
+
 const SearchForCourses = () => {
   return (
     <div className=" bg-[url('https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/search_bg.png')] bg-center px-28 py-[100px] mb-20 bg-cover bg-no-repeat ">
@@ -11,33 +13,48 @@ const SearchForCourses = () => {
           colleges, we are making learning more relevant and transformational.
         </p>
         <div>
-          <form action="" className=" w-[100%] text-[14px] space-y-5">
+          <form action="" className=" w-full text-[14px] space-y-5">
             <div className=" flex flex-row gap-x-5 ">
               <input
                 type="text"
                 placeholder="Your Name"
-                className=" focus:outline-none py-3 px-5 rounded-md w-[40%]"
+                className=" focus:outline-none py-3 px-5 rounded-md w-[48%]"
               />
               <input
                 type="email"
                 placeholder="Your Email"
-                className=" focus:outline-none py-3 px-5 rounded-md w-[40%] "
+                className=" focus:outline-none py-3 px-5 rounded-md w-[48%] "
               />
             </div>
             <div className=" flex flex-row gap-x-5 ">
-              <select className="bg-gray-50 border   rounded-lg  block w-[40%] p-2.5 focus:outline-none text-gray-400   ">
+              <select className="bg-gray-50 border   rounded-lg  block w-[48%] p-2.5 focus:outline-none text-gray-400   ">
                 <option selected>Instructor</option>
                 <option value="US">Albert Coman (PhD)</option>
                 <option value="CA">Angelina Jones (PhD)</option>
                 <option value="FR">Bruce Willis (PhD)</option>
               </select>
-              <select className="bg-gray-50 border   rounded-lg  block w-[40%] p-2.5 focus:outline-none text-gray-400   ">
-                <option selected>Instructor</option>
-                <option value="US">Albert Coman (PhD)</option>
-                <option value="CA">Angelina Jones (PhD)</option>
-                <option value="FR">Bruce Willis (PhD)</option>
+              <select className="bg-gray-50 border   rounded-lg  block w-[48%] p-2.5 focus:outline-none text-gray-400   ">
+                <option selected>Department</option>
+                <option value="US">Hot Stone Message</option>
+                <option value="CA">Facil & Therophy</option>
               </select>
             </div>
+            <div className=" flex flex-row gap-x-5 ">
+              <select className="bg-gray-50 border   rounded-lg  block w-[48%] p-2.5 focus:outline-none text-gray-400   ">
+                <option selected>Campus</option>
+                <option value="US">Hot Stone Message</option>
+                <option value="CA">Facil & Therophy</option>
+              </select>
+              <select className="bg-gray-50 border   rounded-lg  block w-[48%] p-2.5 focus:outline-none text-gray-400   ">
+                <option selected>Level</option>
+                <option value="US">Hot Stone Message</option>
+                <option value="CA">Facil & Therophy</option>
+              </select>
+            </div>
+            <button className=" bg-secoundary w-[100%] py-4 text-white rounded-md hover:bg-primary transition text-[16px] flex items-center justify-center gap-x-4">
+              Search Courses Here
+              <BsArrowRight size={25} />
+            </button>
           </form>
         </div>
       </div>

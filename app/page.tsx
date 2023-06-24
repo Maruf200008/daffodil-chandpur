@@ -1,5 +1,7 @@
 import {
   About,
+  AdmissionAndAid,
+  Brans,
   ContactUs,
   Courses,
   Events,
@@ -26,6 +28,8 @@ export default function Home() {
       <WeAreDifrrent />
       <Testimonial />
       <SearchForCourses />
+      <AdmissionAndAid />
+      <Brans />
     </div>
   );
 }

@@ -18,7 +18,7 @@ const Scholarship = () => {
           </div>
           <div>
             <Link
-              href="#_"
+              href=""
               className=" relative px-5 py-4  overflow-hidden font-medium text-white bg-secoundary  border-secoundary hover:border-secoundary hover:border border  shadow-inner group  flex items-center ml-6 rounded-md "
             >
               <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 bg-[#125875] group-hover:w-full ease"></span>
