@@ -103,12 +103,12 @@ const Courses = () => {
       >
         {options.map((opt, index) => (
           <SwiperSlide key={index}>
-            <div className=" w-[400px]  h-[420px] bg-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-gray-200 group   duration-150 overflow-hidden relative">
+            <div className="  h-[420px] bg-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-gray-200 group   duration-150 overflow-hidden relative">
               <div className="h-[220px] overflow-hidden ">
                 <Image
                   src={opt?.img}
                   alt=""
-                  className=" w-full group-hover:scale-125 overflow-hidden object-cover transition duration-500 ease-in-out delay-150 cursor-pointer"
+                  className=" group-hover:scale-125 overflow-hidden object-cover transition duration-500 ease-in-out delay-150 cursor-pointer"
                 />
               </div>
               <div className=" absolute flex items-center gap-x-3 right-5 bg-secoundary text-white py-2 px-3 rounded-md top-[48%] ">

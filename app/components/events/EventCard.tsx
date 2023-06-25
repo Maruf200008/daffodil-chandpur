@@ -6,12 +6,12 @@ const EventCard = ({ subject }) => {
   const { img, date, monthAndYear, title, description, writenDate, address } =
     subject || {};
   return (
-    <div className="md:w-[430px]  h-[450px] bg-[#deeef5] hover:bg-primary duration-300 transition group  overflow-hidden relative">
+    <div className="  h-[450px] bg-[#deeef5] hover:bg-primary duration-300 transition group  overflow-hidden relative">
       <div className="h-[220px] overflow-hidden ">
         <Image
           src={img}
           alt=""
-          className=" w-full group-hover:scale-125 overflow-hidden object-cover transition duration-500 ease-in-out delay-150 cursor-pointer"
+          className=" group-hover:scale-125 overflow-hidden object-cover transition duration-500 ease-in-out delay-150 cursor-pointer"
         />
       </div>
       <div className=" absolute flex flex-col items-center gap-x-3 left-5 bg-secoundary text-white py-4 px-3  top-[30%] ">

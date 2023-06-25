@@ -7,6 +7,7 @@ import {
   Courses,
   Events,
   Features,
+  Footer,
   Hero,
   Navbar,
   Scholarship,
@@ -32,6 +33,7 @@ export default function Home() {
       <AdmissionAndAid />
       <Brans />
       <Blogg />
+      <Footer />
     </div>
   );
 }

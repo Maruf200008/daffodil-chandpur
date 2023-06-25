@@ -7,12 +7,12 @@ import { MdOutlineDateRange } from "react-icons/md";
 
 const BloggCard = ({ data }) => {
   return (
-    <div className="md:w-[430px]  h-[610px] bg-white shadow-lg  duration-300 transition group  overflow-hidden relative rounded-md">
+    <div className="  h-[610px] bg-white shadow-lg  duration-300 transition group  overflow-hidden relative rounded-md">
       <div className="h-[290px] rounded-md overflow-hidden  ">
         <Image
           src={data?.img}
           alt=""
-          className=" h-full w-full group-hover:scale-125 overflow-hidden object-cover transition duration-500 ease-in-out delay-150 cursor-pointer "
+          className=" h-full  group-hover:scale-125 overflow-hidden object-cover transition duration-500 ease-in-out delay-150 cursor-pointer "
         />
       </div>
       <div className=" absolute flex items-center gap-x-3 left-5 bg-secoundary text-white p-3  top-[4%] rounded-md ">

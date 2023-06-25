@@ -6,7 +6,7 @@ import NavOption from "./NavOption";
 const Navbar = () => {
   return (
     <>
-      <div className=" w-full md:h-[80px]  px-32 pt-0 md:py-[12px] ">
+      <div className=" md:h-[80px]  md:px-32 pt-0 md:py-[12px] ">
         {/* Navbar contact bar */}
         <div className=" hidden md:block ">
           <div className=" flex items-center justify-between">
@@ -14,6 +14,7 @@ const Navbar = () => {
               <p>Follow us:-</p>
               <div className=" flex items-center gap-x-4">
                 <Link
+                  passHref
                   href="https://www.facebook.com/dicchandpur"
                   target="_"
                   className=" cursor-pointer hover:text-[#96d7fa] transition"
@@ -22,18 +23,21 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href=""
+                  passHref
                   className=" cursor-pointer hover:text-[#96d7fa] transition"
                 >
                   <FaInstagram size={22} />
                 </Link>
                 <Link
                   href=""
+                  passHref
                   className=" cursor-pointer hover:text-[#96d7fa] transition"
                 >
                   <FaTwitter size={22} />
                 </Link>
                 <Link
                   href=""
+                  passHref
                   className=" cursor-pointer hover:text-[#96d7fa] transition"
                 >
                   <FaYoutube size={22} />

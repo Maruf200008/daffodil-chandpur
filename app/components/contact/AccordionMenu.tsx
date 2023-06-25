@@ -10,7 +10,7 @@ const AccordionMenu = ({ data }) => {
         <h2>
           <button
             type="button"
-            className="flex border border-slate-700 rounded-md items-center justify-between w-full p-4 font-medium text-left   "
+            className="flex border border-slate-700 rounded-md items-center justify-between p-4 font-medium text-left   "
             onClick={() => setOpen(!open)}
           >
             <span className="flex items-center">{data?.title}</span>

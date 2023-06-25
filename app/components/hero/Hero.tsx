@@ -8,16 +8,18 @@ import HeroCarasol from "./HeroCarasol";
 
 const Hero = () => {
   return (
-    <div className=" w-full h-[1500px] md:h-[900px] overflow-hidden bg-slate-100 relative ">
+    <div className="  h-[1500px] md:h-[900px] overflow-hidden bg-slate-100 relative ">
       <HeroCarasol />
 
-      <div className=" absolute top-[750px] md:top-[680px]    md:bottom-5 z-40 w-full   ">
+      <div className=" md:absolute    bottom-0 z-40    ">
         <div className=" px-10 md:px-32 mx-auto flex flex-col md:flex-row  items-center justify-center gap-x-10 ">
           <div className=" bg-primary/75 p-7 hover:bg-secoundary transition   cursor-pointer ">
             <div className=" flex gap-x-5 text-white items-start ">
               <Image src={sveIcon1} alt="" className=" w-[70px]" />
               <div>
-                <h2 className=" text-xl font-bold mb-3 ">Education Services</h2>
+                <h2 className=" text-[12px] md:text-xl font-bold mb-3 ">
+                  Education Services
+                </h2>
                 <p className=" ">
                   Seamlessly visualize quality ellectual capital without
                   superior collaboration and idea sharing listically

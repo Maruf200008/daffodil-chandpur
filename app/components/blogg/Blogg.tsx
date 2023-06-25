@@ -31,7 +31,7 @@ const Blogg = () => {
     },
   ];
   return (
-    <div className=" py-10 md:py-28 md:px-32 px-10 relative">
+    <div className=" py-10 md:px-32 px-5   ">
       <div className=" flex items-center text-secoundary gap-x-3 mb-10 justify-center ">
         <LuGraduationCap size={30} />
         <p className="  font-semibold  md:text-xl text-center">Our Blogg</p>
@@ -40,9 +40,8 @@ const Blogg = () => {
         Latest Blog & News
       </h2>
 
-      <div className=" grid md:grid-cols-3 md:grid-rows-2 gap-7">
+      <div className=" grid md:grid-cols-3 md:grid-rows-2 gap-7  h-[300px] mb-0 pb-0">
         {blogsData.map((data, index) => {
-          console.log(data);
           return <BloggCard key={index} data={data} />;
         })}
       </div>

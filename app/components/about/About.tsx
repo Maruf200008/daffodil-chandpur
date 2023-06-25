@@ -21,8 +21,8 @@ const About = () => {
           <div>
             <Image src={aboutImg1} alt="" className="" />
           </div>
-          <div className=" hidden  ml-[-290px]  bg-primary rounded-lg w-[280px] relative h-[130px] md:flex items-center flex-col justify-center text-white overflow-hidden">
-            <div className=" z-10 absolute w-full h-[120px] top-0 bg-secoundary"></div>
+          <div className=" hidden  ml-[-290px]  bg-primary rounded-lg  relative h-[130px] md:flex items-center flex-col justify-center text-white overflow-hidden">
+            <div className=" z-10 absolute  h-[120px] top-0 bg-secoundary"></div>
             <div className=" z-40 text-center">
               <h2 className=" text-4xl font-bold">25 +</h2>
               <p className=" text-lg">Years of Experience</p>
@@ -87,6 +87,7 @@ const About = () => {
           </div>
           <Link
             href="#_"
+            passHref
             className=" relative w-[170px] h-[60px] py-2 px-5  overflow-hidden font-medium text-white bg-primary    hover:bg-primary   shadow-inner group  flex items-center  rounded-md "
           >
             <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 bg-primary group-hover:w-full ease"></span>
@@ -113,7 +114,7 @@ const About = () => {
           hidden: { opacity: 0, y: -75 },
           visible: { opacity: 1, y: -10 },
         }}
-        className="absolute bottom-0 right-0 w-[450px] hidden md:block"
+        className="absolute bottom-0 right-0  hidden md:block"
       >
         <Image src={aiImagee} alt="" />
       </motion.div>

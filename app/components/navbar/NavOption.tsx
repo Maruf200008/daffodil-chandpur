@@ -1,26 +1,36 @@
 "use client";
 
+import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
-import { RiMenu3Fill } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
 import logo from "../../images/logo.png";
 
+const itemVariants: Variants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 300, damping: 24 },
+  },
+  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
+};
+
 const NavOption = () => {
-  const [toggle, setToggle] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
-      <div className="relative w-full hidden md:block">
-        <nav className="bg-white  px-28  w-full z-20  left-0 border-b border-gray-200 ">
+      <div className="relative  hidden md:block">
+        <nav className="bg-white  px-28  z-20  left-0 border-b border-gray-200 ">
           <div className=" flex flex-wrap items-center justify-between mx-auto h-[70px]">
-            <Link href="" className="flex items-center">
+            <Link href="" passHref className="flex items-center">
               <Image src={logo} className=" w-[150px]" alt=" Logo" />
             </Link>
 
             <div
-              className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1   h-full"
+              className="items-center justify-between hidden  md:flex  md:order-1   h-full"
               id="navbar-sticky"
             >
               <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border   border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0   ">
@@ -62,6 +72,7 @@ const NavOption = () => {
               </ul>
               <Link
                 href="#_"
+                passHref
                 className="relative px-7 py-3 overflow-hidden font-medium text-white bg-secoundary   shadow-inner group h-[71px] flex items-center ml-6 "
               >
                 <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 bg-[#125875] group-hover:w-full ease"></span>
@@ -78,7 +89,7 @@ const NavOption = () => {
         </nav>
         <div className=" relative ">
           <div
-            className={`w-[280px] fixed  transition-all ease-in  py-5 stiky right-[-350px]  bg-[#00081b] space-y-10   z-50 h-[100vh] px-7 text-white top-0  duration-500 ${
+            className={` fixed  transition-all ease-in  py-5 stiky right-[-350px]  bg-[#00081b] space-y-10   z-50 h-[100vh] px-7 text-white top-0  duration-500 ${
               toggle ? " right-[0]" : "right-[-350px]  overflow-y-scroll"
             }`}
           >
@@ -95,7 +106,7 @@ const NavOption = () => {
                 <input
                   type="search"
                   id="default-search"
-                  className="block w-full px-2 py-3 text-white text-sm  border border-gray-800 bg-gray-50 focus:outline-none bg-transparent "
+                  className="block px-2 py-3 text-white text-sm  border border-gray-800 bg-gray-50 focus:outline-none bg-transparent "
                   placeholder="Search.."
                   required
                 />
@@ -113,9 +124,9 @@ const NavOption = () => {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                       ></path>
                     </svg>
@@ -175,66 +186,61 @@ const NavOption = () => {
           </div>
         </div>
       </div>
-
       {/* mobile responsive */}
-      <div className="bg-slate-200 z-50  p-4 relative md:hidden">
-        <div className=" flex items-center justify-between ">
-          <Image src={logo} alt="logo" className=" w-[150px]" />
-          <div>
-            {!toggle ? (
-              <RiMenu3Fill
-                size={30}
-                className=" text-gray-600 cursor-pointer"
-                onClick={() => setToggle(!toggle)}
-              />
-            ) : (
-              <RxCross2
-                size={30}
-                className=" text-gray-600 cursor-pointer"
-                onClick={() => setToggle(!toggle)}
-              />
-            )}
-          </div>
-        </div>
-        <div>
-          <ul
-            className={`w-[380px] h absolute  flex-col transition-all ease-in  py-5 stiky bg-white  gap-y-5 h-[300px] px-7 text-gray-800 top-0 flex ml-8  duration-500 ${
-              toggle ? " top-[71px]" : "top-[-350px]  overflow-y-scroll"
-            }`}
+      <motion.nav
+        initial={false}
+        animate={isOpen ? "open" : "closed"}
+        className="menu"
+      >
+        <motion.button
+          whileTap={{ scale: 0.97 }}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          Menu
+          <motion.div
+            variants={{
+              open: { rotate: 180 },
+              closed: { rotate: 0 },
+            }}
+            transition={{ duration: 0.2 }}
+            style={{ originY: 0.55 }}
           >
-            <Link
-              href=""
-              className=" border-b pb-3 font-bold hover:text-secoundary transition uppercase"
-            >
-              Home
-            </Link>
-            <Link
-              href=""
-              className=" border-b pb-3 font-bold hover:text-secoundary transition uppercase"
-            >
-              About Us
-            </Link>
-            <Link
-              href=""
-              className=" border-b pb-3 font-bold hover:text-secoundary transition uppercase"
-            >
-              Courses
-            </Link>
-            <Link
-              href=""
-              className=" border-b pb-3 font-bold hover:text-secoundary transition uppercase"
-            >
-              Blog
-            </Link>
-            <Link
-              href=""
-              className=" border-b pb-3 font-bold hover:text-secoundary transition uppercase"
-            >
-              Contact
-            </Link>
-          </ul>
-        </div>
-      </div>
+            <svg width="15" height="15" viewBox="0 0 20 20">
+              <path d="M0 7 L 20 7 L 10 16" />
+            </svg>
+          </motion.div>
+        </motion.button>
+        <motion.ul
+          variants={{
+            open: {
+              clipPath: "inset(0% 0% 0% 0% round 10px)",
+              transition: {
+                type: "spring",
+                bounce: 0,
+                duration: 0.7,
+                delayChildren: 0.3,
+                staggerChildren: 0.05,
+              },
+            },
+            closed: {
+              clipPath: "inset(10% 50% 90% 50% round 10px)",
+              transition: {
+                type: "spring",
+                bounce: 0,
+                duration: 0.3,
+              },
+            },
+          }}
+          style={{ pointerEvents: isOpen ? "auto" : "none" }}
+        >
+          <motion.li variants={itemVariants}>Item 1 </motion.li>
+          <motion.li variants={itemVariants}>Item 2 </motion.li>
+          <motion.li variants={itemVariants}>Item 3 </motion.li>
+          <motion.li variants={itemVariants}>Item 4 </motion.li>
+          <motion.li variants={itemVariants}>Item 5 </motion.li>
+        </motion.ul>
+      </motion.nav>
+      );
     </div>
   );
 };
