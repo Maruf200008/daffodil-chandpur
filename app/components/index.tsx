@@ -1,5 +1,6 @@
 import About from "./about/About";
 import AdmissionAndAid from "./admission&Aid/AdmissionAndAid";
+import Blogg from "./blogg/Blogg";
 import Brans from "./brands/Brans";
 import ContactUs from "./contact/ContactUs";
 import Courses from "./courses/Courses";
@@ -12,9 +13,11 @@ import SearchForCourses from "./searchForCourses/SearchForCourses";
 import Testimonial from "./testimonial/Testimonial";
 import WeAreDifrrent from "./weAreDifrent/WeAreDifrrent";
 Testimonial;
+
 export {
   About,
   AdmissionAndAid,
+  Blogg,
   Brans,
   ContactUs,
   Courses,

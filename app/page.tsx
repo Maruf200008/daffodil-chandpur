@@ -1,6 +1,7 @@
 import {
   About,
   AdmissionAndAid,
+  Blogg,
   Brans,
   ContactUs,
   Courses,
@@ -30,6 +31,7 @@ export default function Home() {
       <SearchForCourses />
       <AdmissionAndAid />
       <Brans />
+      <Blogg />
     </div>
   );
 }
