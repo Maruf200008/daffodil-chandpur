@@ -1,5 +1,3 @@
-"use client";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
@@ -9,15 +7,9 @@ import aiImagee from "../../images/an-img-02.png";
 
 const About = () => {
   return (
-    <div className=" bg-slate-200 py-10 md:py-28 md:px-32 px-10 relative">
+    <div className=" bg-slate-100 py-24 sm:px-14 md:py-28 md:px-32 px-5 relative mt-[60px] md:mt-0">
       <div className=" grid md:grid-cols-2 gap-y-10 gap-x-20">
-        <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -75 }}
-          animate="visible"
-          transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
-          className="flex items-start"
-        >
+        <div className="flex items-start">
           <div>
             <Image src={aboutImg1} alt="" className="" />
           </div>
@@ -28,58 +20,54 @@ const About = () => {
               <p className=" text-lg">Years of Experience</p>
             </div>
           </div>
-        </motion.div>
-        <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 75 }}
-          animate="visible"
-          transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
-          className=" space-y-3"
-        >
-          <div className=" flex items-center text-secoundary gap-x-3">
+        </div>
+        <div className=" space-y-7">
+          <div className=" flex items-center justify-center md:justify-start text-secoundary gap-x-3">
             <LuGraduationCap size={30} />
-            <p className="  font-semibold  md:text-xl">About Our University</p>
+            <p className="  font-semibold text-[18px] sm:text-[22px]  md:text-xl">
+              About Our University
+            </p>
           </div>
 
-          <h2 className=" text-4xl md:text-[50px] leading-[70px] font-bold text-gray-800">
+          <h2 className="  text-[40px] sm:text-[50px] text-center md:text-left leading-[50px] font-bold text-gray-900">
             A Few Words About the University
           </h2>
 
-          <p className=" text-lg text-primary">
+          <p className=" text-lg text-primary font-medium sm:text-[20px]">
             Our community is being called to reimagine the future. As the only
             university where a renowned design school comes together with
             premier colleges, we are making learning more relevant and
             transformational.
           </p>
-          <p className=" text-gray-500">
+          <p className=" text-gray-500 font-medium sm:text-[18px]">
             We are proud to offer top ranige in employment services such and
             asser payroll and benefits administrato managemen and asistance with
             global business range ployment employer readings from religious
             texts or literature are also commonly inc compliance.
           </p>
-          <div className=" flex flex-col  md:flex-row items-center gap-y-5 mt-5 md:mt-0 gap-x-3">
-            <div className=" flex gap-x-3">
-              <div className=" bg-secoundary h-[50px] w-[60px] md:h-[60px] md:w-[100px] rounded-full flex items-center justify-center text-xl text-white font-bold ">
+          <div className=" flex flex-col   md:flex-row md:items-center gap-y-5 mt-5 md:mt-0 ">
+            <div className=" flex gap-x-3  ">
+              <div className=" bg-secoundary h-[40px] w-[60px] sm:h-[60px] md:h-[60px] md:w-[100px] rounded-full flex items-center justify-center text-xl text-white font-bold ">
                 01
               </div>
               <div className=" space-y-3">
-                <h3 className=" text-xl font-bold text-gray-800">
+                <h3 className=" text-xl font-bold text-gray-800 sm:text-[30px]">
                   Doctoral Degrees
                 </h3>
-                <p className=" text-gray-500 text-[14px] ">
+                <p className=" text-gray-500 text-[14px] sm:text-[20px] ">
                   consectetur adipiscing elit sed do eiusmod tem incid idunt.
                 </p>
               </div>
             </div>
             <div className=" flex gap-x-3">
-              <div className=" bg-secoundary h-[50px] w-[60px] md:h-[60px] md:w-[100px] rounded-full flex items-center justify-center text-xl text-white font-bold">
+              <div className=" bg-secoundary h-[40px] sm:h-[60px] w-[60px] md:h-[60px] md:w-[100px] rounded-full flex items-center justify-center text-xl text-white font-bold">
                 02
               </div>
               <div className=" space-y-3">
-                <h3 className=" text-xl font-bold text-gray-800">
+                <h3 className=" text-xl font-bold text-gray-800 sm:text-[30px]">
                   Global Students
                 </h3>
-                <p className=" text-gray-500 text-[14px] ">
+                <p className=" text-gray-500 text-[14px] sm:text-[20px] ">
                   consectetur adipiscing elit sed do eiusmod tem incid idunt.
                 </p>
               </div>
@@ -99,25 +87,11 @@ const About = () => {
               Read More <BsArrowRight size={20} />
             </span>
           </Link>
-        </motion.div>
+        </div>
       </div>
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        transition={{
-          duration: 1.5,
-          delay: 3.5,
-          ease: "easeInOut",
-          repeat: Infinity,
-        }}
-        variants={{
-          hidden: { opacity: 0, y: -75 },
-          visible: { opacity: 1, y: -10 },
-        }}
-        className="absolute bottom-0 right-0  hidden md:block"
-      >
+      <div className="absolute bottom-0 right-0  hidden md:block">
         <Image src={aiImagee} alt="" />
-      </motion.div>
+      </div>
     </div>
   );
 };

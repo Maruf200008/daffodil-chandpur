@@ -71,12 +71,15 @@ const Events = () => {
     },
   ];
   return (
-    <div className=" py-10 md:py-28 md:px-32 px-10 relative">
+    <div className=" py-10 md:py-28 md:px-32 sm:px-14 px-5 relative">
       <div className=" flex items-center text-secoundary gap-x-3 mb-10 justify-center ">
         <LuGraduationCap size={30} />
-        <p className="  font-semibold  md:text-xl text-center"> Our Events</p>
+        <p className="  font-semibold  md:text-xl text-[20px] sm:text-[25px] text-center">
+          {" "}
+          Our Events
+        </p>
       </div>
-      <h2 className=" text-center text-4xl md:text-[50px] font-bold text-gray-800 mb-14">
+      <h2 className=" text-center text-[40px] leading-[45px] sm:text-[55px] font-bold text-gray-800 mb-14 mt-[-30px]">
         Upcoming Events
       </h2>
 

@@ -34,13 +34,15 @@ const Blogg = () => {
     <div className=" py-10 md:px-32 px-5   ">
       <div className=" flex items-center text-secoundary gap-x-3 mb-10 justify-center ">
         <LuGraduationCap size={30} />
-        <p className="  font-semibold  md:text-xl text-center">Our Blogg</p>
+        <p className="  font-semibold text-[20px]  md:text-xl text-center">
+          Our Blogg
+        </p>
       </div>
-      <h2 className=" text-center text-4xl md:text-[50px] font-bold text-gray-800 mb-14">
+      <h2 className=" text-center text-[45px] mt-[-30px] md:mt-0 leading-[50px] md:text-[50px] font-bold text-gray-800 mb-14">
         Latest Blog & News
       </h2>
 
-      <div className=" grid md:grid-cols-3 md:grid-rows-2 gap-7  h-[300px] mb-0 pb-0">
+      <div className=" grid md:grid-cols-3 md:grid-rows-2 gap-10   mb-0 pb-0">
         {blogsData.map((data, index) => {
           return <BloggCard key={index} data={data} />;
         })}

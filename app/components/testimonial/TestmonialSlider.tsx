@@ -64,7 +64,7 @@ const TestmonialSlider = () => {
             slidesPerView: 1,
             spaceBetween: 20,
           },
-          480: {
+          880: {
             slidesPerView: 3,
             spaceBetween: 10,
           },
@@ -83,7 +83,7 @@ const TestmonialSlider = () => {
           return (
             <div key={index}>
               <SwiperSlide>
-                <div className=" w-[400px]  h-[420px] bg-[#f0f7ff] hover:bg-white hover:shadow-2xl hover:shadow-gray-200   duration-150 overflow-hidden relative">
+                <div className=" md:w-[400px]  h-[420px] bg-[#f0f7ff] hover:bg-white hover:shadow-2xl hover:shadow-gray-200   duration-150 overflow-hidden relative">
                   <div className=" p-7 space-y-5 flex items-center justify-center flex-col text-center gap-y-3">
                     <div>
                       <Image src={qt} alt="" />

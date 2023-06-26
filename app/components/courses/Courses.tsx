@@ -63,12 +63,14 @@ const Courses = () => {
     },
   ];
   return (
-    <div className=" py-10 md:py-28 md:px-32 px-10 relative">
+    <div className=" py-20 md:py-28 sm:px-14 md:px-32 px-5 relative">
       <div className=" flex items-center text-secoundary gap-x-3 mb-10 justify-center md:justify-start">
         <LuGraduationCap size={30} />
-        <p className="  font-semibold  md:text-xl text-center">Our Courses</p>
+        <p className="  font-semibold sm:text-[20px]  md:text-xl text-center">
+          Our Courses
+        </p>
       </div>
-      <h2 className=" text-4xl md:text-[50px] font-bold text-gray-800 mb-14">
+      <h2 className=" text-[50px] leading-[55px] md:text-[50px] font-bold text-gray-800 mb-14 text-center md:text-left mt-[-20px]">
         Graduate Programs
       </h2>
       <div className=" hidden  absolute z-40 top-[145px] right-[150px] md:flex items-center gap-x-3">
@@ -86,7 +88,7 @@ const Courses = () => {
             slidesPerView: 1,
             spaceBetween: 20,
           },
-          480: {
+          980: {
             slidesPerView: 3,
             spaceBetween: 10,
           },
@@ -103,26 +105,28 @@ const Courses = () => {
       >
         {options.map((opt, index) => (
           <SwiperSlide key={index}>
-            <div className="  h-[420px] bg-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-gray-200 group   duration-150 overflow-hidden relative">
-              <div className="h-[220px] overflow-hidden ">
+            <div className="  md:h-[420px]  bg-slate-200 hover:bg-white hover:shadow-2xl hover:shadow-gray-200 group   duration-150 overflow-hidden relative">
+              <div className="h-[220px] overflow-hidden  bg-slate-500">
                 <Image
                   src={opt?.img}
                   alt=""
-                  className=" group-hover:scale-125 overflow-hidden object-cover transition duration-500 ease-in-out delay-150 cursor-pointer"
+                  className=" group-hover:scale-125 overflow-hidden object-cover transition duration-500 ease-in-out delay-150 cursor-pointer h-full"
                 />
               </div>
-              <div className=" absolute flex items-center gap-x-3 right-5 bg-secoundary text-white py-2 px-3 rounded-md top-[48%] ">
+              <div className=" absolute flex items-center gap-x-3 right-5 bg-secoundary text-white py-2 px-3 rounded-md top-[45%] sm:top-[42%] ">
                 <LuGraduationCap size={22} />
                 <p>{opt?.subj}</p>
               </div>
 
               <div className=" p-7 space-y-5">
-                <h1 className=" text-2xl font-semibold text-gray-800 hover:text-secoundary transition cursor-pointer">
+                <h1 className=" mt-5 text-[20px] sm:text-[35px] font-bold text-gray-800 hover:text-secoundary transition cursor-pointer">
                   {opt?.title}
                 </h1>
-                <p className=" text-[14px] text-gray-600">{opt?.desc}</p>
+                <p className=" text-[14px] text-gray-600 sm:text-[17px]">
+                  {opt?.desc}
+                </p>
                 <div className=" flex justify-between items-center">
-                  <div className=" flex items-center text-[14px] gap-x-2 text-secoundary">
+                  <div className=" flex items-center text-[14px] sm:text-[17px] gap-x-2 text-secoundary">
                     <Link href="">Read More </Link>
                     <BsArrowRight size={15} />
                   </div>

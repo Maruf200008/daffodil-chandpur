@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
+import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import logo from "../../images/logo.png";
 
@@ -17,8 +18,11 @@ const itemVariants: Variants = {
   closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 };
 
+const navMenuItesm = ["Home", "About Us", "Courses", "Blog", "Contact"];
+
 const NavOption = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   return (
     <div>
@@ -187,60 +191,67 @@ const NavOption = () => {
         </div>
       </div>
       {/* mobile responsive */}
-      <motion.nav
-        initial={false}
-        animate={isOpen ? "open" : "closed"}
-        className="menu"
-      >
-        <motion.button
-          whileTap={{ scale: 0.97 }}
-          onClick={() => setIsOpen(!isOpen)}
+      <div className=" flex justify-between items-center relative   z-30 p-3 sm:px-14 sm:py-5  md:hidden">
+        <div className=" ">
+          <Image src={logo} alt="" className="w-[150px]" />
+        </div>
+        <motion.nav
+          initial={false}
+          animate={isOpen ? "open" : "closed"}
+          className="menu  md:hidden  top-1 "
         >
-          Menu
-          <motion.div
-            variants={{
-              open: { rotate: 180 },
-              closed: { rotate: 0 },
-            }}
-            transition={{ duration: 0.2 }}
-            style={{ originY: 0.55 }}
+          <motion.button
+            whileTap={{ scale: 0.97 }}
+            onClick={() => setIsOpen(!isOpen)}
           >
-            <svg width="15" height="15" viewBox="0 0 20 20">
-              <path d="M0 7 L 20 7 L 10 16" />
-            </svg>
-          </motion.div>
-        </motion.button>
-        <motion.ul
-          variants={{
-            open: {
-              clipPath: "inset(0% 0% 0% 0% round 10px)",
-              transition: {
-                type: "spring",
-                bounce: 0,
-                duration: 0.7,
-                delayChildren: 0.3,
-                staggerChildren: 0.05,
+            <div className=" border-2 p-2 border-gray-700">
+              {!isOpen ? <FaBars size={20} /> : <RxCross2 size={20} />}
+            </div>
+            <motion.div
+              variants={{
+                open: { rotate: 180 },
+                closed: { rotate: 0 },
+              }}
+              transition={{ duration: 0.2 }}
+              style={{ originY: 0.55 }}
+            ></motion.div>
+          </motion.button>
+          <motion.ul
+            className=" absolute bg-white left-10 w-[250px] sm:w-[420px]   p-4  space-y-6 shadow-md"
+            variants={{
+              open: {
+                clipPath: "inset(0% 0% 0% 0% round 10px)",
+                transition: {
+                  type: "spring",
+                  bounce: 0,
+                  duration: 0.7,
+                  delayChildren: 0.3,
+                  staggerChildren: 0.05,
+                },
               },
-            },
-            closed: {
-              clipPath: "inset(10% 50% 90% 50% round 10px)",
-              transition: {
-                type: "spring",
-                bounce: 0,
-                duration: 0.3,
+              closed: {
+                clipPath: "inset(10% 50% 90% 50% round 10px)",
+                transition: {
+                  type: "spring",
+                  bounce: 0,
+                  duration: 0.3,
+                },
               },
-            },
-          }}
-          style={{ pointerEvents: isOpen ? "auto" : "none" }}
-        >
-          <motion.li variants={itemVariants}>Item 1 </motion.li>
-          <motion.li variants={itemVariants}>Item 2 </motion.li>
-          <motion.li variants={itemVariants}>Item 3 </motion.li>
-          <motion.li variants={itemVariants}>Item 4 </motion.li>
-          <motion.li variants={itemVariants}>Item 5 </motion.li>
-        </motion.ul>
-      </motion.nav>
-      );
+            }}
+            style={{ pointerEvents: isOpen ? "auto" : "none" }}
+          >
+            {navMenuItesm.map((item, index) => (
+              <motion.li
+                key={index}
+                className=" uppercase text-[16px] text-gray-600 font-medium border-b pb-2 hover:text-secoundary transition"
+                variants={itemVariants}
+              >
+                {item}{" "}
+              </motion.li>
+            ))}
+          </motion.ul>
+        </motion.nav>
+      </div>
     </div>
   );
 };

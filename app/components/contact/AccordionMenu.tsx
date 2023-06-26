@@ -6,11 +6,11 @@ const AccordionMenu = ({ data }) => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className=" space-y-6">
+      <div className=" space-y-6  ">
         <h2>
           <button
             type="button"
-            className="flex border border-slate-700 rounded-md items-center justify-between p-4 font-medium text-left   "
+            className="flex gap-4 border w-full border-slate-700 rounded-md items-center justify-between p-4 font-medium text-left   "
             onClick={() => setOpen(!open)}
           >
             <span className="flex items-center">{data?.title}</span>

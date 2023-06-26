@@ -8,9 +8,9 @@ import brandlogo5 from "../../images/b-logo5.png";
 
 const Brans = () => {
   return (
-    <div className=" bg-secoundary py-14 md:px-32 mb-20">
+    <div className=" bg-secoundary px-5 py-14 md:px-32 mb-20">
       <Marquee>
-        <div className=" flex items-center justify-center gap-x-16">
+        <div className=" flex items-center justify-center gap-16">
           <div>
             <Image src={brandlogo1} alt="" />
           </div>

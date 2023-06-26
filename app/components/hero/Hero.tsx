@@ -8,23 +8,23 @@ import HeroCarasol from "./HeroCarasol";
 
 const Hero = () => {
   return (
-    <div className="  h-[1500px] md:h-[900px] overflow-hidden bg-slate-100 relative ">
+    <div className="   overflow-hidden  relative ">
       <HeroCarasol />
 
-      <div className=" md:absolute    bottom-0 z-40    ">
-        <div className=" px-10 md:px-32 mx-auto flex flex-col md:flex-row  items-center justify-center gap-x-10 ">
-          <div className=" bg-primary/75 p-7 hover:bg-secoundary transition   cursor-pointer ">
-            <div className=" flex gap-x-5 text-white items-start ">
+      <div className=" md:absolute bottom-0 z-40 mt-[80px] md:mt-0    ">
+        <div className=" px-5 sm:px-14 md:px-32 mx-auto flex flex-col md:flex-row  items-center justify-center gap-x-10 ">
+          <div className=" md:bg-primary/75 bg-primary p-7 hover:bg-secoundary transition  cursor-pointer ">
+            <div className=" flex md:flex-row flex-col items-center justify-center text-center md:text-left  gap-5 text-white md:items-start ">
               <Image src={sveIcon1} alt="" className=" w-[70px]" />
               <div>
-                <h2 className=" text-[12px] md:text-xl font-bold mb-3 ">
+                <h2 className=" text-[24px] sm:text-[30px] md:text-xl font-bold mb-3  ">
                   Education Services
                 </h2>
-                <p className=" ">
+                <p className=" sm:text-[18px]">
                   Seamlessly visualize quality ellectual capital without
                   superior collaboration and idea sharing listically
                 </p>
-                <div className=" flex gap-x-3 items-center mt-4">
+                <div className=" flex gap-x-3 items-center justify-center md:justify-start mt-4">
                   <p>Read More </p>
                   <BsArrowRight />
                 </div>
@@ -33,19 +33,17 @@ const Hero = () => {
             <div></div>
           </div>
           <div className=" bg-secoundary p-7   cursor-pointer ">
-            <div className=" flex gap-x-5 text-white items-start ">
-              <Image
-                src={sveIcon2}
-                alt=""
-                className=" w-[70px] h-full bg-cover"
-              />
+            <div className=" flex md:flex-row flex-col items-center justify-center text-center md:text-left  gap-5 text-white md:items-start ">
+              <Image src={sveIcon2} alt="" className=" w-[70px]" />
               <div>
-                <h2 className=" text-xl font-bold mb-3 ">International Hubs</h2>
-                <p className=" ">
+                <h2 className=" text-[24px] sm:text-[30px] md:text-xl font-bold mb-3 ">
+                  International Hubs
+                </h2>
+                <p className="sm:text-[18px] ">
                   Seamlessly visualize quality ellectual capital without
                   superior collaboration and idea sharing listically
                 </p>
-                <div className=" flex gap-x-3 items-center mt-4">
+                <div className=" flex gap-x-3 items-center justify-center md:justify-start mt-4">
                   <p>Read More </p>
                   <BsArrowRight />
                 </div>
@@ -53,18 +51,18 @@ const Hero = () => {
             </div>
             <div></div>
           </div>
-          <div className=" bg-primary/75 p-7 hover:bg-secoundary transition   cursor-pointer ">
-            <div className=" flex gap-x-5 text-white items-start ">
+          <div className=" md:bg-primary/75 bg-primary p-7 hover:bg-secoundary transition cursor-pointer">
+            <div className=" flex md:flex-row flex-col items-center justify-center text-center md:text-left  gap-5 text-white md:items-start ">
               <Image src={sveIcon3} alt="" className=" w-[70px]" />
               <div>
-                <h2 className=" text-xl font-bold mb-3 ">
-                  Bachelor’s and Master’s
+                <h2 className=" text-[24px] sm:text-[30px] md:text-xl font-bold mb-3 ">
+                  {`Bachelor’s and Master’s`}
                 </h2>
-                <p className=" ">
+                <p className=" sm:text-[18px]">
                   Seamlessly visualize quality ellectual capital without
                   superior collaboration and idea sharing listically
                 </p>
-                <div className=" flex gap-x-3 items-center mt-4">
+                <div className=" flex gap-x-3 items-center justify-center md:justify-start mt-4">
                   <p>Read More </p>
                   <BsArrowRight />
                 </div>
