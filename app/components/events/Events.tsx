@@ -71,19 +71,19 @@ const Events = () => {
     },
   ];
   return (
-    <div className=" py-10 md:py-28 md:px-32 sm:px-14 px-5 relative">
-      <div className=" flex items-center text-secoundary gap-x-3 mb-10 justify-center ">
+    <div className=" py-10 md:py-28 xl:px-32 md:px-14 px-5 relative lg:px-[50px] ">
+      <div className=" flex items-center text-secoundary gap-x-3 mb-10 justify-center md:justify-start ">
         <LuGraduationCap size={30} />
-        <p className="  font-semibold  md:text-xl text-[20px] sm:text-[25px] text-center">
+        <p className="  font-semibold  md:text-xl text-[20px] sm:text-[25px] text-center ">
           {" "}
           Our Events
         </p>
       </div>
-      <h2 className=" text-center text-[40px] leading-[45px] sm:text-[55px] font-bold text-gray-800 mb-14 mt-[-30px]">
+      <h2 className=" text-center md:text-left text-[40px] leading-[45px] sm:text-[55px] font-bold  mb-14 mt-[-30px]">
         Upcoming Events
       </h2>
 
-      <div className=" grid md:grid-cols-3 md:grid-rows-2 gap-7">
+      <div className=" grid md:grid-cols-2 md:grid-rows-2 gap-7 ">
         {subjects.map((sub, index) => (
           <EventCard key={index} subject={sub} />
         ))}

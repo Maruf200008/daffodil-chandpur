@@ -1,7 +1,7 @@
 const WeAreDifrrent = () => {
   return (
-    <div className=" bg-[url('https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/cta_bg.png')] bg-center px-5 md:px-28 sm:px-14 py-[100px] mb-20 bg-no-repeat ">
-      <div className=" space-y-5 text-center md:text-left">
+    <div className=" bg-[url('https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/cta_bg.png')] bg-center px-5 xl:px-28 sm:px-14 py-[100px] mb-20 bg-no-repeat ">
+      <div className=" space-y-5 text-center xl:text-left">
         <h2 className=" md:text-[80px] sm:text-[60px] text-[50px]   font-semibold text-white">
           Were <span className=" text-secoundary underline">Qeducato</span> &
           Were Diffirent

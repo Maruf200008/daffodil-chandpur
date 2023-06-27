@@ -26,9 +26,9 @@ const NavOption = () => {
 
   return (
     <div>
-      <div className="relative  hidden md:block">
-        <nav className="bg-white  px-28  z-20  left-0 border-b border-gray-200 ">
-          <div className=" flex flex-wrap items-center justify-between mx-auto h-[70px]">
+      <div className="relative  hidden lg:block ">
+        <nav className="bg-white lg:px-[50px] lg:mt-[-20px]  z-20  left-0 border-b border-gray-200 ">
+          <div className=" flex flex-wrap items-center justify-between mx-auto  h-[70px]">
             <Link href="" passHref className="flex items-center">
               <Image src={logo} className=" w-[150px]" alt=" Logo" />
             </Link>
@@ -77,7 +77,7 @@ const NavOption = () => {
               <Link
                 href="#_"
                 passHref
-                className="relative px-7 py-3 overflow-hidden font-medium text-white bg-secoundary   shadow-inner group h-[71px] flex items-center ml-6 "
+                className="relative px-7 py-3 overflow-hidden font-medium text-white bg-secoundary   shadow-inner group lg:h-full flex items-center ml-6 "
               >
                 <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 bg-[#125875] group-hover:w-full ease"></span>
                 <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 bg-[#125875] group-hover:w-full ease"></span>
@@ -191,14 +191,14 @@ const NavOption = () => {
         </div>
       </div>
       {/* mobile responsive */}
-      <div className=" flex justify-between items-center relative   z-30 p-3 sm:px-14 sm:py-5  md:hidden">
+      <div className=" flex justify-between items-center relative   z-30 p-3 sm:px-14 sm:py-5  lg:hidden bg-white">
         <div className=" ">
           <Image src={logo} alt="" className="w-[150px]" />
         </div>
         <motion.nav
           initial={false}
           animate={isOpen ? "open" : "closed"}
-          className="menu  md:hidden  top-1 "
+          className="menu  lg:hidden  top-1 "
         >
           <motion.button
             whileTap={{ scale: 0.97 }}
@@ -217,7 +217,7 @@ const NavOption = () => {
             ></motion.div>
           </motion.button>
           <motion.ul
-            className=" absolute bg-white left-10 w-[250px] sm:w-[420px]   p-4  space-y-6 shadow-md"
+            className=" absolute bg-white left-10 w-[250px] sm:w-[420px]    p-4  space-y-6 shadow-md"
             variants={{
               open: {
                 clipPath: "inset(0% 0% 0% 0% round 10px)",

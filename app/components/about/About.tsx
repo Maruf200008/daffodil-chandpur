@@ -7,13 +7,13 @@ import aiImagee from "../../images/an-img-02.png";
 
 const About = () => {
   return (
-    <div className=" bg-slate-100 py-24 sm:px-14 md:py-28 md:px-32 px-5 relative mt-[60px] md:mt-0">
-      <div className=" grid md:grid-cols-2 gap-y-10 gap-x-20">
+    <div className=" bg-slate-100 lg:px-[50px] py-24 sm:px-14 md:py-28 xl:px-32 px-5 relative mt-[60px] xl:mt-0 lg:mt-[200px]">
+      <div className=" grid lg:grid-cols-2 gap-y-10 gap-x-20 lg:gap-x-10">
         <div className="flex items-start">
           <div>
             <Image src={aboutImg1} alt="" className="" />
           </div>
-          <div className=" hidden  ml-[-290px]  bg-primary rounded-lg  relative h-[130px] md:flex items-center flex-col justify-center text-white overflow-hidden">
+          <div className=" hidden  ml-[-290px]  bg-primary rounded-lg  relative h-[130px] xl:flex items-center flex-col justify-center text-white overflow-hidden">
             <div className=" z-10 absolute  h-[120px] top-0 bg-secoundary"></div>
             <div className=" z-40 text-center">
               <h2 className=" text-4xl font-bold">25 +</h2>
@@ -29,7 +29,7 @@ const About = () => {
             </p>
           </div>
 
-          <h2 className="  text-[40px] sm:text-[50px] text-center md:text-left leading-[50px] font-bold text-gray-900">
+          <h2 className="  text-[40px] sm:text-[50px] text-center md:text-left leading-[50px] font-bold text-gray-900 lg:text-[40px]">
             A Few Words About the University
           </h2>
 
@@ -47,27 +47,27 @@ const About = () => {
           </p>
           <div className=" flex flex-col   md:flex-row md:items-center gap-y-5 mt-5 md:mt-0 ">
             <div className=" flex gap-x-3  ">
-              <div className=" bg-secoundary h-[40px] w-[60px] sm:h-[60px] md:h-[60px] md:w-[100px] rounded-full flex items-center justify-center text-xl text-white font-bold ">
+              <div className=" bg-secoundary h-[40px] w-[60px] sm:h-[60px] md:h-[50px] md:w-[100px] lg:w-[130px]  rounded-full flex items-center justify-center text-xl text-white font-bold ">
                 01
               </div>
               <div className=" space-y-3">
-                <h3 className=" text-xl font-bold text-gray-800 sm:text-[30px]">
+                <h3 className=" text-xl font-bold text-gray-800 sm:text-[30px] lg:text-[25px]">
                   Doctoral Degrees
                 </h3>
-                <p className=" text-gray-500 text-[14px] sm:text-[20px] ">
+                <p className=" text-gray-500 text-[14px] sm:text-[20px] lg:text-[16px] ">
                   consectetur adipiscing elit sed do eiusmod tem incid idunt.
                 </p>
               </div>
             </div>
-            <div className=" flex gap-x-3">
-              <div className=" bg-secoundary h-[40px] sm:h-[60px] w-[60px] md:h-[60px] md:w-[100px] rounded-full flex items-center justify-center text-xl text-white font-bold">
+            <div className=" flex gap-x-3  ">
+              <div className=" bg-secoundary h-[40px] w-[60px] sm:h-[60px] md:h-[50px] md:w-[100px] lg:w-[130px]  rounded-full flex items-center justify-center text-xl text-white font-bold ">
                 02
               </div>
               <div className=" space-y-3">
-                <h3 className=" text-xl font-bold text-gray-800 sm:text-[30px]">
+                <h3 className=" text-xl font-bold text-gray-800 sm:text-[30px] lg:text-[25px]">
                   Global Students
                 </h3>
-                <p className=" text-gray-500 text-[14px] sm:text-[20px] ">
+                <p className=" text-gray-500 text-[14px] sm:text-[20px] lg:text-[16px] ">
                   consectetur adipiscing elit sed do eiusmod tem incid idunt.
                 </p>
               </div>
@@ -76,7 +76,7 @@ const About = () => {
           <Link
             href="#_"
             passHref
-            className=" relative w-[170px] h-[60px] py-2 px-5  overflow-hidden font-medium text-white bg-primary    hover:bg-primary   shadow-inner group  flex items-center  rounded-md "
+            className=" relative w-[170px] h-[60px] py-2 px-5 lg:z-40  overflow-hidden font-medium text-white bg-primary    hover:bg-primary   shadow-inner group  flex items-center  rounded-md "
           >
             <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 bg-primary group-hover:w-full ease"></span>
             <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 bg-primary group-hover:w-full ease"></span>

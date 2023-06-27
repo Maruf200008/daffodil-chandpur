@@ -8,7 +8,7 @@ import brandlogo5 from "../../images/b-logo5.png";
 
 const Brans = () => {
   return (
-    <div className=" bg-secoundary px-5 py-14 md:px-32 mb-20">
+    <div className=" bg-secoundary px-5 sm:px-14 py-14 xl:px-32 mb-20">
       <Marquee>
         <div className=" flex items-center justify-center gap-16">
           <div>

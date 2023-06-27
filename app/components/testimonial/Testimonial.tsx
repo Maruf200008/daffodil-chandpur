@@ -4,7 +4,7 @@ import TestmonialSlider from "./TestmonialSlider";
 
 const Testimonial = () => {
   return (
-    <div className=" py-10 md:py-28 md:px-32 sm:px-14 px-5 relative">
+    <div className=" py-10 md:py-28 xl:px-32 sm:px-14 px-5 relative">
       <div className=" flex items-center text-secoundary gap-x-3 mb-10 justify-center ">
         <LuGraduationCap size={30} />
         <p className="  font-semibold text-[20px]  md:text-xl text-center">

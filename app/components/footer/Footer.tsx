@@ -11,11 +11,11 @@ import sentMail from "../../images/send-mail.png";
 const Footer = () => {
   return (
     <>
-      <div className=" bg-primary px-5 py-14 md:px-32 mt-20 md:mt-0">
-        <div className=" flex md:flex-row flex-col  items-center justify-between gap-y-5">
+      <div className=" bg-primary px-5 sm:px-14 py-14 xl:px-32 mt-20 md:mt-0">
+        <div className=" flex xl:flex-row flex-col  items-center justify-between gap-y-5">
           <div className=" flex md:flex-row flex-col items-center gap-6">
             <div>
-              <Image src={sentMail} alt="" />
+              <Image src={sentMail} alt="" className=" sm:w-[80px]" />
             </div>
             <div className=" text-white">
               <h2 className=" text-[40px] font-bold text-center md:text-left">
@@ -26,7 +26,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className=" md:w-[35%] w-full">
+          <div className=" xl:w-[35%] w-full">
             <label className="mb-2 text-sm font-medium text-gray-900 sr-only">
               Search
             </label>
@@ -48,9 +48,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-[url('https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/footer-bg.png')] bg-center px-5 md:px-28 py-[100px] bg-cover bg-no-repeat ">
-        <div className=" grid md:grid-cols-5 gap-x-8">
-          <div className=" space-y-7 md:col-span-2 ">
+      <div className=" bg-[url('https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/footer-bg.png')] bg-center px-5 sm:px-14 xl:px-28 py-[100px] bg-cover bg-no-repeat ">
+        <div className=" grid md:grid-cols-2 xl:grid-cols-5 gap-8">
+          <div className=" space-y-7 xl:col-span-2 ">
             <div>
               <h2 className=" text-white text-[25px] font-semibold ">
                 About Us
@@ -86,116 +86,111 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className=" flex flex-col md:flex-row gap-7 ">
-            <div className=" space-y-5 mt-10 ">
-              <div>
-                <h2 className=" text-white text-[25px] font-semibold ">
-                  Our Links
-                </h2>
-                <div className=" w-[70px] h-[1px] bg-secoundary mt-2" />
-              </div>
-              <ul className=" flex flex-col gap-y-3 text-[#b2c0d8] font-semibold  ">
-                <Link href="" className="hover:text-secoundary transition">
-                  Home
-                </Link>
-                <Link href="" className="hover:text-secoundary transition">
-                  About Us
-                </Link>
-                <Link href="" className="hover:text-secoundary transition">
-                  Courses
-                </Link>
-                <Link href="" className="hover:text-secoundary transition">
-                  Blog
-                </Link>
-                <Link href="" className="hover:text-secoundary transition">
-                  Contact
-                </Link>
-              </ul>
+
+          <div className=" space-y-5 mt-10 md:mt-0 ">
+            <div>
+              <h2 className=" text-white text-[25px] font-semibold ">
+                Our Links
+              </h2>
+              <div className=" w-[70px] h-[1px] bg-secoundary mt-2" />
             </div>
-            <div className=" space-y-5  ">
-              <div>
-                <h2 className=" text-white text-[25px] font-semibold ">
-                  Latest Post
-                </h2>
-                <div className=" w-[70px] h-[1px] bg-secoundary mt-2" />
-              </div>
-              <div className=" space-y-5">
-                <div className=" flex  items-center  gap-x-3   ">
-                  <Image src={sBlogimg1} alt="" />
-                  <div className=" space-y-2">
-                    <h2 className="font-medium text-gray-300 cursor-pointer transition hover:text-white">
-                      Nothing impossble to need hard work
-                    </h2>
-                    <p className=" font-medium text-secoundary">
-                      7 March, 2023
-                    </p>
-                  </div>
+            <ul className=" flex flex-col gap-y-3 text-[#b2c0d8] font-semibold  ">
+              <Link href="" className="hover:text-secoundary transition">
+                Home
+              </Link>
+              <Link href="" className="hover:text-secoundary transition">
+                About Us
+              </Link>
+              <Link href="" className="hover:text-secoundary transition">
+                Courses
+              </Link>
+              <Link href="" className="hover:text-secoundary transition">
+                Blog
+              </Link>
+              <Link href="" className="hover:text-secoundary transition">
+                Contact
+              </Link>
+            </ul>
+          </div>
+          <div className=" space-y-5  ">
+            <div>
+              <h2 className=" text-white text-[25px] font-semibold ">
+                Latest Post
+              </h2>
+              <div className=" w-[70px] h-[1px] bg-secoundary mt-2" />
+            </div>
+            <div className=" space-y-5">
+              <div className=" flex  items-center  gap-x-3   ">
+                <Image src={sBlogimg1} alt="" />
+                <div className=" space-y-2">
+                  <h2 className="font-medium text-gray-300 cursor-pointer transition hover:text-white">
+                    Nothing impossble to need hard work
+                  </h2>
+                  <p className=" font-medium text-secoundary">7 March, 2023</p>
                 </div>
-                <div className=" flex  items-center gap-x-3">
-                  <Image src={sBlogimg2} alt="" />
-                  <div className=" space-y-2">
-                    <h2 className="font-medium text-gray-300 cursor-pointer transition hover:text-white">
-                      Nothing impossble to need hard work
-                    </h2>
-                    <p className=" font-medium text-secoundary">
-                      23 July, 2023
-                    </p>
-                  </div>
+              </div>
+              <div className=" flex  items-center gap-x-3">
+                <Image src={sBlogimg2} alt="" />
+                <div className=" space-y-2">
+                  <h2 className="font-medium text-gray-300 cursor-pointer transition hover:text-white">
+                    Nothing impossble to need hard work
+                  </h2>
+                  <p className=" font-medium text-secoundary">23 July, 2023</p>
                 </div>
               </div>
             </div>
-            <div className=" space-y-5  ">
-              <div>
-                <h2 className=" text-white text-[25px] font-semibold ">
-                  Contact Us
-                </h2>
-                <div className=" w-[70px] h-[1px] bg-secoundary mt-2" />
+          </div>
+          <div className=" space-y-5  ">
+            <div>
+              <h2 className=" text-white text-[25px] font-semibold ">
+                Contact Us
+              </h2>
+              <div className=" w-[70px] h-[1px] bg-secoundary mt-2" />
+            </div>
+            <div className=" space-y-5">
+              <div className=" flex items-center  gap-x-3 text-white">
+                <div className=" bg-secoundary p-2 rounded-full">
+                  <AiOutlinePhone size={20} />
+                </div>
+                <div className="text-[#b2c0d8] font-medium">
+                  <p className=" hover:text-white transition cursor-pointer">
+                    +1 (444) 000-8888
+                  </p>
+                  <p className=" hover:text-white transition cursor-pointer">
+                    +91 7052 101 786
+                  </p>
+                </div>
               </div>
-              <div className=" space-y-5">
-                <div className=" flex items-center  gap-x-3 text-white">
-                  <div className=" bg-secoundary p-2 rounded-full">
-                    <AiOutlinePhone size={20} />
-                  </div>
-                  <div className="text-[#b2c0d8] font-medium">
-                    <p className=" hover:text-white transition cursor-pointer">
-                      +1 (444) 000-8888
-                    </p>
-                    <p className=" hover:text-white transition cursor-pointer">
-                      +91 7052 101 786
-                    </p>
-                  </div>
+              <div className=" flex items-center  gap-x-3 text-white">
+                <div className=" bg-secoundary p-2 rounded-full">
+                  <GoMail size={20} />
                 </div>
-                <div className=" flex items-center  gap-x-3 text-white">
-                  <div className=" bg-secoundary p-2 rounded-full">
-                    <GoMail size={20} />
-                  </div>
-                  <div className="text-[#b2c0d8] font-medium">
-                    <p className=" hover:text-white transition cursor-pointer">
-                      info@example.com
-                    </p>
-                    <p className=" hover:text-white transition cursor-pointer">
-                      help@example.com
-                    </p>
-                  </div>
+                <div className="text-[#b2c0d8] font-medium">
+                  <p className=" hover:text-white transition cursor-pointer">
+                    info@example.com
+                  </p>
+                  <p className=" hover:text-white transition cursor-pointer">
+                    help@example.com
+                  </p>
                 </div>
-                <div className=" flex items-center gap-x-3 text-white">
-                  <div className=" bg-secoundary p-2 rounded-full">
-                    <SlLocationPin size={20} />
-                  </div>
-                  <div className="text-[#b2c0d8] font-medium">
-                    <p>1247/Plot No. 39, 15th Phase,</p>
-                    <p>LHB Colony, Kanpur</p>
-                  </div>
+              </div>
+              <div className=" flex items-center gap-x-3 text-white">
+                <div className=" bg-secoundary p-2 rounded-full">
+                  <SlLocationPin size={20} />
+                </div>
+                <div className="text-[#b2c0d8] font-medium">
+                  <p>1247/Plot No. 39, 15th Phase,</p>
+                  <p>LHB Colony, Kanpur</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className=" bg-secoundary md:py-5 py-14 md:px-32 px-5">
-        <div className=" flex md:flex-row flex-col items-center justify-between space-y-5">
+      <div className=" bg-secoundary md:py-5 py-14 xl:px-32 px-5">
+        <div className=" flex xl:flex-row flex-col items-center justify-between space-y-5">
           <Image src={logo} alt="" className=" w-[180px]" />
-          <p className=" text-white font-medium text-center md:text-left text-[16px] md:text-[20px]">
+          <p className=" text-white font-medium text-center md:text-left text-[16px]  xl:text-[20px]">
             Copyright © Mohammad Maruf 2023 . All rights reserved.
           </p>
         </div>

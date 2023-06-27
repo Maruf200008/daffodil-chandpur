@@ -24,10 +24,10 @@ const ContactUs = () => {
     },
   ];
   return (
-    <div className="py-10 px-5 md:px-28 mb-20 sm:px-14">
-      <div className=" grid md:grid-cols-2 gap-x-20">
+    <div className="py-10 px-5 xl:px-28 mb-20 sm:px-14">
+      <div className=" grid xl:grid-cols-2 gap-x-20">
         <div className=" space-y-5">
-          <h2 className=" text-[40px] sm:text-[50px] leading-[45px] sm:leading-[55px] text-center md:text-left font-bold text-gray-900">
+          <h2 className=" text-[40px] sm:text-[50px] leading-[45px] sm:leading-[55px] md:leading-[65px] md:text-[63px] text-center md:text-left font-bold text-gray-900">
             Get every single answer here.
           </h2>
           <p className=" text-[20px] sm:text-[23px] text-gray-500 text-center md:text-left">
@@ -41,7 +41,7 @@ const ContactUs = () => {
           </div>
         </div>
         <div className=" ">
-          <div className="bg-[#032e3f] md:px-16 py-10 rounded-md px-3 sm:px-7 md:mx-10 ">
+          <div className="bg-[#032e3f] md:px-16 py-10 rounded-md px-3 sm:px-7 xl:mx-10 ">
             <h2 className="text-[40px] text-white font-bold text-center md:text-left">
               Make An Contact
             </h2>

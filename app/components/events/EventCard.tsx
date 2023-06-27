@@ -6,15 +6,15 @@ const EventCard = ({ subject }) => {
   const { img, date, monthAndYear, title, description, writenDate, address } =
     subject || {};
   return (
-    <div className="  md:h-[450px] bg-[#deeef5] hover:bg-primary duration-300 transition group  overflow-hidden relative">
-      <div className="h-[220px] overflow-hidden ">
+    <div className="  xl:h-[450px]  bg-[#deeef5] hover:bg-primary duration-300 transition group  overflow-hidden relative">
+      <div className=" overflow-hidden ">
         <Image
           src={img}
           alt=""
           className=" group-hover:scale-125 overflow-hidden object-cover transition duration-500 ease-in-out delay-150 cursor-pointer"
         />
       </div>
-      <div className=" absolute flex flex-col items-center gap-x-3 left-5 bg-secoundary text-white py-4 px-3  top-[35%] ">
+      <div className=" absolute flex flex-col items-center gap-x-3 left-5 bg-secoundary text-white py-4 px-3  mt-[-70px] ">
         <h2 className=" text-3xl font-bold">{date}</h2>
         <p className=" text-[12px]">{monthAndYear}</p>
       </div>
@@ -25,7 +25,7 @@ const EventCard = ({ subject }) => {
         <p className=" text-[14px] sm:text-[17px] text-gray-600 group-hover:text-[#96bece]">
           {description}
         </p>
-        <div className=" flex items-center gap-x-2">
+        <div className=" flex items-center gap-x-2 ">
           <div className=" flex items-center text-[12px] sm:text-[14px] gap-x-2 text-gray-500 group-hover:text-[#96bece]">
             <Link href="">{writenDate}</Link>
             <BsArrowRight size={15} />

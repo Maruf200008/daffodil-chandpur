@@ -7,7 +7,7 @@ import { MdOutlineDateRange } from "react-icons/md";
 
 const BloggCard = ({ data }) => {
   return (
-    <div className="  md:h-[610px] bg-white shadow-md md:shadow-lg  duration-300 transition group  overflow-hidden relative rounded-md">
+    <div className="  xl:h-[610px] bg-white shadow-md md:shadow-lg  duration-300 transition group  overflow-hidden relative rounded-md">
       <div className="h-[290px] rounded-md overflow-hidden  ">
         <Image
           src={data?.img}
@@ -19,8 +19,8 @@ const BloggCard = ({ data }) => {
         <MdOutlineDateRange />
         <p className=" text-[12px]">{data?.date}</p>
       </div>
-      <div className=" p-3 md:p-7 space-y-5">
-        <div className=" flex gap-x-5 md:gap-x-12 mt-6 md:mt-0">
+      <div className=" p-3 sm:p-7 md:p-7 space-y-5">
+        <div className=" flex gap-x-5 xl:gap-x-12 mt-6 md:mt-0">
           <div className=" flex gap-x-3 items-center">
             <BiUser className=" text-secoundary" size={22} />
             <p className=" text-[14px] text-gray-500">{data?.role}</p>

@@ -8,16 +8,16 @@ import HeroCarasol from "./HeroCarasol";
 
 const Hero = () => {
   return (
-    <div className="   overflow-hidden  relative ">
+    <div className=" lg:relative ">
       <HeroCarasol />
 
-      <div className=" md:absolute bottom-0 z-40 mt-[80px] md:mt-0    ">
-        <div className=" px-5 sm:px-14 md:px-32 mx-auto flex flex-col md:flex-row  items-center justify-center gap-x-10 ">
-          <div className=" md:bg-primary/75 bg-primary p-7 hover:bg-secoundary transition  cursor-pointer ">
-            <div className=" flex md:flex-row flex-col items-center justify-center text-center md:text-left  gap-5 text-white md:items-start ">
-              <Image src={sveIcon1} alt="" className=" w-[70px]" />
+      <div className=" lg:absolute  bottom-0  z-40 mt-[80px] lg:mb-[-200px] xl:mt-[50px]    ">
+        <div className=" px-5 sm:px-14 lg:mt-[50px] lg:px-[50px] xl:px-32 mx-auto grid lg:grid-cols-3 gap-x-10 ">
+          <div className="  lg:bg-primary/75 bg-primary p-7 hover:bg-secoundary transition  cursor-pointer  ">
+            <div className=" flex md:flex-row flex-col items-center justify-center text-center md:text-left  gap-5 text-white xl:items-start ">
+              <Image src={sveIcon1} alt="" className=" w-[70px] md:w-[120px]" />
               <div>
-                <h2 className=" text-[24px] sm:text-[30px] md:text-xl font-bold mb-3  ">
+                <h2 className=" text-[24px] sm:text-[30px] lg:text-[25px] xl:text-xl font-bold mb-3">
                   Education Services
                 </h2>
                 <p className=" sm:text-[18px]">
@@ -33,13 +33,13 @@ const Hero = () => {
             <div></div>
           </div>
           <div className=" bg-secoundary p-7   cursor-pointer ">
-            <div className=" flex md:flex-row flex-col items-center justify-center text-center md:text-left  gap-5 text-white md:items-start ">
-              <Image src={sveIcon2} alt="" className=" w-[70px]" />
+            <div className=" flex md:flex-row flex-col items-center justify-center text-center md:text-left  gap-5 text-white xl:items-start  ">
+              <Image src={sveIcon2} alt="" className=" w-[70px] md:w-[120px]" />
               <div>
-                <h2 className=" text-[24px] sm:text-[30px] md:text-xl font-bold mb-3 ">
-                  International Hubs
+                <h2 className=" text-[24px] sm:text-[30px] lg:text-[25px] xl:text-xl font-bold mb-3">
+                  Education Services
                 </h2>
-                <p className="sm:text-[18px] ">
+                <p className=" sm:text-[18px]">
                   Seamlessly visualize quality ellectual capital without
                   superior collaboration and idea sharing listically
                 </p>
@@ -51,11 +51,11 @@ const Hero = () => {
             </div>
             <div></div>
           </div>
-          <div className=" md:bg-primary/75 bg-primary p-7 hover:bg-secoundary transition cursor-pointer">
-            <div className=" flex md:flex-row flex-col items-center justify-center text-center md:text-left  gap-5 text-white md:items-start ">
-              <Image src={sveIcon3} alt="" className=" w-[70px]" />
+          <div className=" xl:bg-primary/75 bg-primary p-7 hover:bg-secoundary transition cursor-pointer">
+            <div className=" flex md:flex-row flex-col items-center justify-center text-center md:text-left  gap-5 text-white xl:items-start ">
+              <Image src={sveIcon3} alt="" className=" w-[70px] md:w-[120px]" />
               <div>
-                <h2 className=" text-[24px] sm:text-[30px] md:text-xl font-bold mb-3 ">
+                <h2 className=" text-[24px] sm:text-[30px] lg:text-[25px] xl:text-xl font-bold mb-3 ">
                   {`Bachelor’s and Master’s`}
                 </h2>
                 <p className=" sm:text-[18px]">

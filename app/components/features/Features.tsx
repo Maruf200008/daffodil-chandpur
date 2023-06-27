@@ -6,9 +6,9 @@ import stepImg from "../../images/steps-img.png";
 
 const Features = () => {
   return (
-    <div className="  bg-[#032e3f] mb-20 overflow-hidden px-5 sm:px-14 md:px-0 ">
-      <div className="  grid md:grid-cols-2 items-start justify-between gap-x-14">
-        <div className="md:ml-32">
+    <div className="  bg-[#032e3f] mb-20 overflow-hidden px-5 sm:px-14 xl:px-0 lg:px-[50px] ">
+      <div className="  grid lg:grid-cols-2 items-start lg:items-center justify-between gap-x-14">
+        <div className="xl:ml-32">
           <div className=" py-28 space-y-5  ">
             <h2 className=" text-white text-center md:text-start  text-[45px] sm:text-[55px] font-bold">
               Our Best Features
@@ -68,7 +68,7 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className=" overflow-hidden  md:h-[800px]  mb-16 md:mb-0">
+        <div className=" overflow-hidden  lg:h-[800px]  mb-16 lg:mb-0">
           <Image src={stepImg} alt="" className="  object-cover h-full " />
         </div>
       </div>
