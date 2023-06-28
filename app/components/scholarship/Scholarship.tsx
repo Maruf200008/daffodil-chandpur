@@ -9,7 +9,7 @@ const Scholarship = () => {
             <h1 className="  xl:text-left text-[40px]  sm:text-[50px] font-bold">
               Scholarship Programs
             </h1>
-            <p className=" text-[18px] font-medium mb-10">
+            <p className=" text-[18px] font-medium mb-10 2xl:text-[16px]">
               At Estuidar University, we prepare you to launch your career by
               providing a supportive, creative, and professional environment
               from which to learn practical skills and build a network of

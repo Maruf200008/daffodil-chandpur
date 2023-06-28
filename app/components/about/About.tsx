@@ -14,7 +14,7 @@ const About = () => {
             <Image src={aboutImg1} alt="" className="" />
           </div>
           <div className=" hidden  ml-[-290px] w-[290px]  bg-primary rounded-lg  relative h-[130px] 2xl:flex items-center flex-col justify-center text-white overflow-hidden">
-            <div className=" z-10 absolute  h-[120px] top-0 bg-secoundary"></div>
+            <div className=" z-40 absolute  h-[120px] w-[290px] top-0 bg-secoundary"></div>
             <div className=" z-40 text-center">
               <h2 className=" text-4xl font-bold">25 +</h2>
               <p className=" text-lg">Years of Experience</p>
@@ -45,8 +45,8 @@ const About = () => {
             global business range ployment employer readings from religious
             texts or literature are also commonly inc compliance.
           </p>
-          <div className=" flex flex-col   md:flex-row md:items-center gap-y-5 mt-5 md:mt-0 ">
-            <div className=" flex gap-x-3  ">
+          <div className=" flex flex-col   md:flex-row md:items-center gap-y-5 mt-5 md:mt-0 2xl:gap-5 ">
+            <div className=" flex gap-x-3   ">
               <div className=" bg-secoundary h-[40px] w-[60px] sm:h-[60px] md:h-[50px] md:w-[100px] lg:w-[130px]  rounded-full flex items-center justify-center text-xl text-white font-bold ">
                 01
               </div>

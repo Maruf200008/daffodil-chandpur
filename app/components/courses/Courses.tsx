@@ -104,7 +104,7 @@ const Courses = () => {
       >
         {options.map((opt, index) => (
           <SwiperSlide key={index}>
-            <div className="  2xl:h-[420px]  bg-slate-200 hover:bg-white hover:shadow-2xl hover:shadow-gray-200 group   duration-150 overflow-hidden ">
+            <div className="    bg-slate-200 hover:bg-white hover:shadow-2xl hover:shadow-gray-200 group   duration-150 overflow-hidden ">
               <div className=" xl:h-[220px] overflow-hidden  bg-slate-500 relative">
                 <Image
                   src={opt?.img}

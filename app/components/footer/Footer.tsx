@@ -54,7 +54,7 @@ const Footer = () => {
       </div>
       <div className=" bg-[url('https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/footer-bg.png')] bg-center px-5 sm:px-14 lg:px-[50px] xl:px-28 py-[100px] bg-cover bg-no-repeat ">
         <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className=" space-y-7 2xl:col-span-2 ">
+          <div className=" space-y-7  ">
             <div>
               <h2 className=" text-white text-[25px] font-semibold ">
                 About Us

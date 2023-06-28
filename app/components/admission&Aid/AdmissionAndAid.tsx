@@ -21,17 +21,17 @@ const AdmissionAndAid = () => {
             transformational.
           </p>
           <Link
-            href=""
+            href="#_"
             passHref
-            className=" relative px-5 py-4  overflow-hidden font-medium text-white bg-secoundary  border-secoundary hover:border-secoundary hover:border border  shadow-inner group  flex items-center xl:justify-start justify-center  rounded-md  "
+            className=" relative w-[170px] h-[60px] py-2 px-5 lg:z-40  overflow-hidden font-medium text-white bg-primary    hover:bg-primary   shadow-inner group  flex items-center  rounded-md justify-center "
           >
-            <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 bg-[#125875] group-hover: ease"></span>
-            <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 bg-[#125875] group-hover: ease"></span>
-            <span className="absolute top-0 left-0  h-0 transition-all duration-300 delay-200 bg-[#125875] group-hover:h-full ease"></span>
-            <span className="absolute bottom-0 left-0  h-0 transition-all duration-300 delay-200 bg-[#125875] group-hover:h-full ease"></span>
-            <span className="absolute inset-0  h-full duration-300 delay-300 bg-[#125875] opacity-0 group-hover:opacity-100"></span>
+            <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 bg-primary group-hover:w-full ease"></span>
+            <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 bg-primary group-hover:w-full ease"></span>
+            <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-secoundary group-hover:h-full ease"></span>
+            <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-secoundary group-hover:h-full ease"></span>
+            <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-secoundary opacity-0 group-hover:opacity-100"></span>
             <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease flex items-center text-[15px] md:text gap-x-2">
-              Read More <BsArrowRight />
+              Read More <BsArrowRight size={20} />
             </span>
           </Link>
         </div>

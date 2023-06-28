@@ -27,7 +27,7 @@ const ContactUs = () => {
     <div className="py-10 px-5 xl:px-28 mb-20 sm:px-14 lg:px-[50px]">
       <div className=" grid lg:grid-cols-2 gap-x-20 xl:gap-10">
         <div className=" space-y-5">
-          <h2 className=" text-[40px] sm:text-[50px] leading-[45px] sm:leading-[55px] md:leading-[65px] md:text-[63px] text-center md:text-left font-bold text-gray-900 lg:text-[50px]">
+          <h2 className=" text-[40px] sm:text-[50px] leading-[45px] sm:leading-[55px] md:leading-[65px] md:text-[63px] text-center md:text-left font-bold text-gray-900 lg:text-[50px] 2xl:text-[40px]">
             Get every single answer here.
           </h2>
           <p className=" text-[20px] sm:text-[23px] text-gray-500 text-center md:text-left lg:text-[18px]">
