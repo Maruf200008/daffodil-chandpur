@@ -11,11 +11,15 @@ import sentMail from "../../images/send-mail.png";
 const Footer = () => {
   return (
     <>
-      <div className=" bg-primary px-5 sm:px-14 py-14 xl:px-32 mt-20 md:mt-0">
-        <div className=" flex xl:flex-row flex-col  items-center justify-between gap-y-5">
+      <div className=" bg-primary px-5 sm:px-14 py-14 xl:px-32 mt-20 md:mt-0 lg:px-[50px] ">
+        <div className=" flex lg:flex-row flex-col  items-center justify-between gap-y-5">
           <div className=" flex md:flex-row flex-col items-center gap-6">
             <div>
-              <Image src={sentMail} alt="" className=" sm:w-[80px]" />
+              <Image
+                src={sentMail}
+                alt=""
+                className=" sm:w-[80px] lg:w-[50px]"
+              />
             </div>
             <div className=" text-white">
               <h2 className=" text-[40px] font-bold text-center md:text-left">
@@ -26,7 +30,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className=" xl:w-[35%] w-full">
+          <div className=" lg:w-[35%] w-full">
             <label className="mb-2 text-sm font-medium text-gray-900 sr-only">
               Search
             </label>
@@ -48,9 +52,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-[url('https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/footer-bg.png')] bg-center px-5 sm:px-14 xl:px-28 py-[100px] bg-cover bg-no-repeat ">
-        <div className=" grid md:grid-cols-2 xl:grid-cols-5 gap-8">
-          <div className=" space-y-7 xl:col-span-2 ">
+      <div className=" bg-[url('https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/footer-bg.png')] bg-center px-5 sm:px-14 lg:px-[50px] xl:px-28 py-[100px] bg-cover bg-no-repeat ">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className=" space-y-7 2xl:col-span-2 ">
             <div>
               <h2 className=" text-white text-[25px] font-semibold ">
                 About Us
@@ -187,10 +191,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-secoundary md:py-5 py-14 xl:px-32 px-5">
-        <div className=" flex xl:flex-row flex-col items-center justify-between space-y-5">
+      <div className=" bg-secoundary md:py-5 py-14 xl:px-32 px-5 lg:px-[50px]">
+        <div className=" flex lg:flex-row flex-col items-center justify-between space-y-5">
           <Image src={logo} alt="" className=" w-[180px]" />
-          <p className=" text-white font-medium text-center md:text-left text-[16px]  xl:text-[20px]">
+          <p className=" text-white font-medium text-center md:text-left text-[16px]  ">
             Copyright © Mohammad Maruf 2023 . All rights reserved.
           </p>
         </div>

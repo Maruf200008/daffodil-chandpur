@@ -36,7 +36,7 @@ const HeroCarasol = () => {
               <Image
                 src={hero1}
                 alt=""
-                className=" relative h-[650px] md:h-[800px] xl:h-full object-cover "
+                className=" relative h-[650px] md:h-[800px] xl:h-[900px] object-cover "
               />
               <div className=" px-5 sm:px-14 xl:px-32 top-[100px] lg:w-[70%] md:top-[170px] lg:top-[100px] absolute">
                 <div className="space-y-9">
@@ -46,10 +46,10 @@ const HeroCarasol = () => {
                     </p>
                     <div className=" w-[70px] h-[3px] bg-secoundary hidden xl:block"></div>
                   </div>
-                  <h2 className=" text-[40px] leading-[50px] sm:text-[50px]  md:text-[80px] font-bold text-white md:leading-[80px] sm:leading-[60px] lg:text-[60px]">
+                  <h2 className=" text-[40px] leading-[50px] sm:text-[50px]  md:text-[80px] font-bold text-white md:leading-[80px] sm:leading-[60px] lg:text-[60px] ">
                     Education is the best key success in life
                   </h2>
-                  <p className=" text-white  sm:text-[18px] md:text-[20px] font-medium lg:text-[18px]">
+                  <p className=" text-white  sm:text-[18px] md:text-[20px] font-medium lg:text-[18px] 2xl:w-[80%] 2xl:text-[16px]">
                     Donec vitae libero non enim placerat eleifend aliquam erat
                     volutpat. Curabitur diam ex, dapibus purus sapien, cursus
                     sed nisl tristique, commodo gravida lectus non.

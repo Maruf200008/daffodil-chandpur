@@ -20,7 +20,7 @@ const BloggCard = ({ data }) => {
         <p className=" text-[12px]">{data?.date}</p>
       </div>
       <div className=" p-3 sm:p-7 md:p-7 space-y-5">
-        <div className=" flex gap-x-5 xl:gap-x-12 mt-6 md:mt-0">
+        <div className=" flex gap-x-5 2xl:gap-x-12 mt-6 md:mt-0  lg:gap-x-2 xl:gap-x-4">
           <div className=" flex gap-x-3 items-center">
             <BiUser className=" text-secoundary" size={22} />
             <p className=" text-[14px] text-gray-500">{data?.role}</p>

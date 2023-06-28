@@ -27,7 +27,7 @@ const NavOption = () => {
   return (
     <div>
       <div className="relative  hidden lg:block ">
-        <nav className="bg-white lg:px-[50px] lg:mt-[-20px]  z-20  left-0 border-b border-gray-200 ">
+        <nav className="bg-white lg:px-[110px] lg:mt-[-20px]  z-20  left-0 border-b border-gray-200 ">
           <div className=" flex flex-wrap items-center justify-between mx-auto  h-[70px]">
             <Link href="" passHref className="flex items-center">
               <Image src={logo} className=" w-[150px]" alt=" Logo" />

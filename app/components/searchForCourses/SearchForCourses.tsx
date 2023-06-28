@@ -2,8 +2,8 @@ import { BsArrowRight } from "react-icons/bs";
 
 const SearchForCourses = () => {
   return (
-    <div className=" bg-[url('https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/search_bg.png')] bg-center px-5 sm:px-14 xl:px-28 py-[100px] mb-20 bg-cover bg-no-repeat mt-16 ">
-      <div className=" xl:w-[50%] space-y-5 text-center md:text-left">
+    <div className=" bg-[url('https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/search_bg.png')] bg-center px-5 sm:px-14 xl:px-28 lg:px-[50px] py-[100px] mb-20 bg-cover bg-no-repeat mt-16 ">
+      <div className=" lg:w-[80%] xl:w-[60%] space-y-5 text-center md:text-left">
         <h2 className=" text-white text-[50px] font-bold">
           Search For Courses
         </h2>

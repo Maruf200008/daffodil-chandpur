@@ -6,7 +6,7 @@ import NavOption from "./NavOption";
 const Navbar = () => {
   return (
     <>
-      <div className=" lg:h-[80px] lg:px-[50px] lg:mt-[15px]  xl:px-32 pt-0 xl:py-[12px] ">
+      <div className=" lg:h-[80px] lg:px-[50px] lg:mt-[15px]  xl:px-32 pt-0  ">
         {/* Navbar contact bar */}
         <div className=" hidden lg:block ">
           <div className=" flex items-center justify-between">

@@ -5,8 +5,8 @@ import aboutImg from "../../images/about_img.png";
 
 const AdmissionAndAid = () => {
   return (
-    <div className="py-10 px-5 sm:px-14 xl:px-28 mb-20">
-      <div className=" grid xl:grid-cols-2 gap-x-10 items-center">
+    <div className="py-10 px-5 sm:px-14 xl:px-28 mb-20 lg:px-[50px]">
+      <div className=" grid lg:grid-cols-2 gap-x-10 items-center">
         <div>
           <Image src={aboutImg} alt="aboutImg" />
         </div>

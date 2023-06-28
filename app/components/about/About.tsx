@@ -13,7 +13,7 @@ const About = () => {
           <div>
             <Image src={aboutImg1} alt="" className="" />
           </div>
-          <div className=" hidden  ml-[-290px]  bg-primary rounded-lg  relative h-[130px] xl:flex items-center flex-col justify-center text-white overflow-hidden">
+          <div className=" hidden  ml-[-290px] w-[290px]  bg-primary rounded-lg  relative h-[130px] 2xl:flex items-center flex-col justify-center text-white overflow-hidden">
             <div className=" z-10 absolute  h-[120px] top-0 bg-secoundary"></div>
             <div className=" z-40 text-center">
               <h2 className=" text-4xl font-bold">25 +</h2>

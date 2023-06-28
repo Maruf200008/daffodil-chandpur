@@ -6,7 +6,7 @@ const EventCard = ({ subject }) => {
   const { img, date, monthAndYear, title, description, writenDate, address } =
     subject || {};
   return (
-    <div className="  xl:h-[450px]  bg-[#deeef5] hover:bg-primary duration-300 transition group  overflow-hidden relative">
+    <div className="  2xl:h-[450px]  bg-[#deeef5] hover:bg-primary duration-300 transition group  overflow-hidden relative">
       <div className=" overflow-hidden ">
         <Image
           src={img}

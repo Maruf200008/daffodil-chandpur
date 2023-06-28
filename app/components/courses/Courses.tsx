@@ -63,7 +63,7 @@ const Courses = () => {
     },
   ];
   return (
-    <div className=" py-20 md:py-28 sm:px-14  xl:px-32 px-5 lg:px-[50px] relative">
+    <div className=" py-20 md:py-28 sm:px-14  xl:px-32 px-5 lg:px-[50px] relative ">
       <div className=" flex items-center text-secoundary gap-x-3  mb-10 justify-center md:justify-start">
         <LuGraduationCap size={30} />
         <p className="  font-semibold sm:text-[20px]  md:text-xl text-center">
@@ -104,7 +104,7 @@ const Courses = () => {
       >
         {options.map((opt, index) => (
           <SwiperSlide key={index}>
-            <div className="  xl:h-[420px]  bg-slate-200 hover:bg-white hover:shadow-2xl hover:shadow-gray-200 group   duration-150 overflow-hidden ">
+            <div className="  2xl:h-[420px]  bg-slate-200 hover:bg-white hover:shadow-2xl hover:shadow-gray-200 group   duration-150 overflow-hidden ">
               <div className=" xl:h-[220px] overflow-hidden  bg-slate-500 relative">
                 <Image
                   src={opt?.img}
