@@ -23,7 +23,7 @@ const Features = () => {
                   <div className=" w-[65px] h-[65px] md:h-[80px] md:w-[80px] lg:w-[100px] lg:h-[70px] 2xl:w-[70px] bg-secoundary rounded-full flex items-center justify-center">
                     <Image src={feaIcon1} alt="" className=" lg:w-[40px]" />
                   </div>
-                  <div className=" w-full md:w-[500px] space-y-4">
+                  <div className=" md:w-[500px] space-y-4">
                     <h2 className=" text-white text-[30px] font-bold">
                       Skilled Teachers
                     </h2>
@@ -38,7 +38,7 @@ const Features = () => {
                   <div className="  w-[65px] h-[65px] md:h-[80px] md:w-[80px] lg:w-[100px] lg:h-[70px] 2xl:w-[70px] bg-secoundary rounded-full flex items-center justify-center">
                     <Image src={feaIcon2} alt="" className=" lg:w-[40px]" />
                   </div>
-                  <div className=" w-full md:w-[500px] space-y-4">
+                  <div className="  md:w-[500px] space-y-4">
                     <h2 className=" text-white text-[30px] font-bold">
                       Affordable Courses
                     </h2>
@@ -53,7 +53,7 @@ const Features = () => {
                   <div className=" w-[65px] h-[65px] md:h-[80px] md:w-[80px] lg:w-[100px] 2xl:w-[70px] lg:h-[70px] bg-secoundary rounded-full flex items-center justify-center">
                     <Image src={feaIcon3} alt="" className=" lg:w-[40px]" />
                   </div>
-                  <div className=" w-full md:w-[500px] space-y-4">
+                  <div className=" md:w-[500px] space-y-4">
                     <h2 className=" text-white text-[30px] font-bold">
                       Efficient & Flexible
                     </h2>

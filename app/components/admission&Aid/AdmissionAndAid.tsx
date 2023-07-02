@@ -6,11 +6,11 @@ import aboutImg from "../../images/about_img.png";
 const AdmissionAndAid = () => {
   return (
     <div className="py-10 px-5 sm:px-14 xl:px-28 mb-20 lg:px-[50px]">
-      <div className=" grid lg:grid-cols-2 gap-x-10 items-center">
-        <div>
+      <div className=" grid lg:grid-cols-2 gap-x-10 items-center justify-center ">
+        <div className=" mx-auto 2xl:mx-0">
           <Image src={aboutImg} alt="aboutImg" />
         </div>
-        <div className=" space-y-5">
+        <div className=" space-y-5 flex flex-col items-center lg:items-start lg:justify-start  justify-center ">
           <h2 className=" text-[40px] font-bold text-gray-700 mt-14 xl:mt-0 text-center md:text-left">
             Admission & Aid
           </h2>

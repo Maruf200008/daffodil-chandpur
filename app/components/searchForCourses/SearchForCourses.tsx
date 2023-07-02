@@ -18,34 +18,34 @@ const SearchForCourses = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                className=" focus:outline-none py-3 px-5 rounded-md md:w-[48%]"
+                className=" focus:outline-none py-3 px-5 rounded-md md:w-[50%]"
               />
               <input
                 type="email"
                 placeholder="Your Email"
-                className=" focus:outline-none py-3 px-5 rounded-md md:w-[48%] "
+                className=" focus:outline-none py-3 px-5 rounded-md md:w-[50%] "
               />
             </div>
             <div className=" flex flex-col  md:flex-row gap-5 ">
-              <select className="bg-gray-50 border   rounded-lg  block md:w-[48%] p-2.5 focus:outline-none text-gray-400   ">
+              <select className="bg-gray-50 border   rounded-lg  block md:w-[50%] p-2.5 focus:outline-none text-gray-400   ">
                 <option selected>Instructor</option>
                 <option value="US">Albert Coman (PhD)</option>
                 <option value="CA">Angelina Jones (PhD)</option>
                 <option value="FR">Bruce Willis (PhD)</option>
               </select>
-              <select className="bg-gray-50 border   rounded-lg  block md:w-[48%] p-2.5 focus:outline-none text-gray-400   ">
+              <select className="bg-gray-50 border   rounded-lg  block md:w-[50%] p-2.5 focus:outline-none text-gray-400   ">
                 <option selected>Department</option>
                 <option value="US">Hot Stone Message</option>
                 <option value="CA">Facil & Therophy</option>
               </select>
             </div>
             <div className=" flex flex-col  md:flex-row gap-5 ">
-              <select className="bg-gray-50 border   rounded-lg  block md:w-[48%] p-2.5 focus:outline-none text-gray-400   ">
+              <select className="bg-gray-50 border   rounded-lg  block md:w-[50%] p-2.5 focus:outline-none text-gray-400   ">
                 <option selected>Campus</option>
                 <option value="US">Hot Stone Message</option>
                 <option value="CA">Facil & Therophy</option>
               </select>
-              <select className="bg-gray-50 border   rounded-lg  block md:w-[48%] p-2.5 focus:outline-none text-gray-400   ">
+              <select className="bg-gray-50 border   rounded-lg  block md:w-[50%] p-2.5 focus:outline-none text-gray-400   ">
                 <option selected>Level</option>
                 <option value="US">Hot Stone Message</option>
                 <option value="CA">Facil & Therophy</option>

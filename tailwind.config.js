@@ -9,6 +9,10 @@ module.exports = {
   
   plugins: [ require('flowbite/plugin')],
   theme: {
+    // screens: {
+    //   '3xl': '1832px',
+
+    // },
     extend: {
       colors : {
         primary : "#125875",

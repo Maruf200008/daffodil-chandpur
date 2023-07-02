@@ -24,7 +24,13 @@ import "swiper/css/pagination";
 import { Navigation } from "swiper";
 
 const Courses = () => {
-  const options = [
+  interface Courses {
+    img: string | StaticImageData;
+    subj: string;
+    title: string;
+    desc: string;
+  }
+  const options: Courses[] = [
     {
       img: couress1,
       subj: "Biochemistry",

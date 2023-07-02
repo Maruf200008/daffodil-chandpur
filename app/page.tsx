@@ -7,20 +7,19 @@ import {
   Courses,
   Events,
   Features,
-  Footer,
   Hero,
-  Navbar,
   Scholarship,
   SearchForCourses,
   Testimonial,
   WeAreDifrrent,
 } from "./components";
+import ScrollButton from "./utils/ScrollButton";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <Hero />
+      <ScrollButton />
       <About />
       <Courses />
       <Features />
@@ -28,12 +27,12 @@ export default function Home() {
       <Scholarship />
       <ContactUs />
       <WeAreDifrrent />
+      <ScrollButton />
       <Testimonial />
       <SearchForCourses />
       <AdmissionAndAid />
       <Brans />
       <Blogg />
-      <Footer />
     </div>
   );
 }

@@ -4,12 +4,12 @@ import { BsArrowRight } from "react-icons/bs";
 import sveIcon1 from "../../images/sve-icon4.png";
 import sveIcon2 from "../../images/sve-icon5.png";
 import sveIcon3 from "../../images/sve-icon6.png";
-import HeroCarasol from "./HeroCarasol";
+import HeroCard from "./HeroCard";
 
 const Hero = () => {
   return (
     <div className=" lg:relative ">
-      <HeroCarasol />
+      <HeroCard />
 
       <div className=" lg:absolute  bottom-0  z-40 mt-[80px] lg:mb-[-200px] xl:mb-[0]    ">
         <div className=" px-5 sm:px-14 lg:mt-[50px] lg:px-[50px] xl:px-32 mx-auto grid lg:grid-cols-3 gap-x-10 ">
