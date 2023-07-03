@@ -2,8 +2,6 @@
 import { BsArrowRight } from "react-icons/bs";
 import hero1 from "../../images/hero1.jpg";
 
-import { motion } from "framer-motion";
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,12 +16,7 @@ const HeroCard = () => {
             className=" relative h-[650px] md:h-[800px] xl:h-[900px] object-cover "
           />
           <div className=" px-5 sm:px-14 xl:px-32 top-[100px] lg:w-[70%] md:top-[170px] lg:top-[100px] absolute">
-            <motion.div
-              initial={{ x: -200 }}
-              whileInView={{ x: 0 }}
-              transition={{ type: "spring", bounce: 0.4 }}
-              className="space-y-9"
-            >
+            <div className="space-y-9">
               <div className=" flex items-center gap-x-5 ">
                 <p className=" uppercase  text-white font-semibold text-[15px] sm:text-[17px] md:text-xl  ">
                   welcome To Daffodil University
@@ -68,7 +61,7 @@ const HeroCard = () => {
                   </span>
                 </Link>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

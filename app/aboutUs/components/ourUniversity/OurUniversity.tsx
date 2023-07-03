@@ -1,25 +1,15 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
 import { LuGraduationCap } from "react-icons/lu";
-import aboutImg1 from "../../images/about_img_02.png";
-import aiImagee from "../../images/an-img-02.png";
+import aboutImg1 from "../../../images/about_img_05.png";
 
-const About = () => {
+const OurUniversity = () => {
   return (
-    <div className=" bg-slate-100 lg:px-[50px] py-24 sm:px-16 md:py-28 xl:px-32 px-5 relative mt-[60px] xl:mt-0 lg:mt-[200px]">
+    <div className=" bg-slate-100 lg:px-[50px] py-24 sm:px-16 md:py-28 xl:px-32 px-5 relative  ">
       <div className=" grid lg:grid-cols-2 gap-y-10 gap-x-20 lg:gap-x-10">
         <div className="flex items-start">
           <div>
             <Image src={aboutImg1} alt="" className="" />
-          </div>
-          <div className=" hidden  ml-[-290px] w-[290px] bg-primary rounded-lg  relative h-[130px] 2xl:flex items-center flex-col justify-center text-white overflow-hidden">
-            <div className="z-40 absolute h-[120px] w-[290px] top-0 bg-secoundary"></div>
-            <div className="z-40 text-center">
-              <h2 className="text-4xl font-bold">25 +</h2>
-              <p className="text-lg">Years of Experience</p>
-            </div>
           </div>
         </div>
         <div className="space-y-7">
@@ -74,27 +64,10 @@ const About = () => {
               </div>
             </div>
           </div>
-          <Link
-            href="#_"
-            passHref
-            className="relative w-[170px] h-[60px] py-2 px-5 lg:z-40 overflow-hidden font-medium text-white bg-primary hover:bg-primary   shadow-inner group  flex items-center rounded-md"
-          >
-            <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 bg-primary group-hover:w-full ease"></span>
-            <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 bg-primary group-hover:w-full ease"></span>
-            <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-secoundary group-hover:h-full ease"></span>
-            <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-secoundary group-hover:h-full ease"></span>
-            <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-secoundary opacity-0 group-hover:opacity-100"></span>
-            <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease flex items-center text-[15px] md:text gap-x-2">
-              Read More <BsArrowRight size={20} />
-            </span>
-          </Link>
         </div>
-      </div>
-      <div className="absolute bottom-0 right-0  hidden md:block">
-        <Image src={aiImagee} alt="" />
       </div>
     </div>
   );
 };
 
-export default About;
+export default OurUniversity;

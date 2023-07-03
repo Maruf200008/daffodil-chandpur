@@ -11,6 +11,7 @@ import Hero from "./hero/Hero";
 import Navbar from "./navbar/Navbar";
 import Scholarship from "./scholarship/Scholarship";
 import SearchForCourses from "./searchForCourses/SearchForCourses";
+import Subscribe from "./subscribe/Subscribe";
 import Testimonial from "./testimonial/Testimonial";
 import WeAreDifrrent from "./weAreDifrent/WeAreDifrrent";
 Testimonial;
@@ -28,6 +29,7 @@ export {
   Navbar,
   Scholarship,
   SearchForCourses,
+  Subscribe,
   Testimonial,
   WeAreDifrrent,
 };

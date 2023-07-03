@@ -10,6 +10,7 @@ import {
   Hero,
   Scholarship,
   SearchForCourses,
+  Subscribe,
   Testimonial,
   WeAreDifrrent,
 } from "./components";
@@ -33,6 +34,7 @@ export default function Home() {
       <AdmissionAndAid />
       <Brans />
       <Blogg />
+      <Subscribe />
     </div>
   );
 }

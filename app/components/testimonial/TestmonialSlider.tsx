@@ -16,7 +16,13 @@ import avator3 from "../../images/testi_avatar_03.png";
 import { Navigation } from "swiper";
 
 const TestmonialSlider = () => {
-  const sliderData = [
+  interface Slider {
+    desc: string;
+    img: string | StaticImageData;
+    name: string;
+    roll: string;
+  }
+  const sliderData: Slider[] = [
     {
       desc: "Curabitur ac tortor ante. Sed quis iaculis risus. Ut ultrices ligula aliquet odio tristique euismod. Donec efficitur dolor in turpis aliquet, at mollis.",
       img: avator1,

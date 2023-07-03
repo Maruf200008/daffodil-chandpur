@@ -17,8 +17,18 @@ const itemVariants: Variants = {
   },
   closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 };
+interface NavMenu {
+  name: string;
+  link: string;
+}
 
-const navMenuItesm = ["Home", "About Us", "Courses", "Blog", "Contact"];
+const navMenuItesm: NavMenu[] = [
+  { name: "Home", link: "/" },
+  { name: "About Us", link: "/aboutUs" },
+  { name: "Courses", link: "/courses" },
+  { name: "Blog", link: "/blog" },
+  { name: "Contact", link: "/Contact" },
+];
 
 const NavOption = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,8 +37,8 @@ const NavOption = () => {
   return (
     <div>
       <div className="relative  hidden lg:block ">
-        <nav className="bg-white lg:px-[110px] lg:mt-[-20px]  z-20  left-0 border-b border-gray-200 ">
-          <div className=" flex flex-wrap items-center justify-between mx-auto  h-[70px]">
+        <nav className="bg-white lg:px-[50px] xl:px-32  lg:mt-[-20px]  z-20  left-0 border-b border-gray-200 ">
+          <div className=" flex items-center justify-between mx-auto  h-[70px] lg:mx-0">
             <Link href="" passHref className="flex items-center">
               <Image src={logo} className=" w-[150px]" alt=" Logo" />
             </Link>
@@ -45,13 +55,13 @@ const NavOption = () => {
                   Home
                 </Link>
                 <Link
-                  href="#"
+                  href="/aboutUs"
                   className=" text-slate-700 hover:text-secoundary transition"
                 >
                   About Us
                 </Link>
                 <Link
-                  href="#"
+                  href="/courses"
                   className=" text-slate-700 hover:text-secoundary transition"
                 >
                   Courses
@@ -246,7 +256,7 @@ const NavOption = () => {
                 className=" uppercase text-[16px] text-gray-600 font-medium border-b pb-2 hover:text-secoundary transition"
                 variants={itemVariants}
               >
-                {item}{" "}
+                <Link href={item?.link}>{item?.name}</Link>
               </motion.li>
             ))}
           </motion.ul>
