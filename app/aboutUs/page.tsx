@@ -1,12 +1,10 @@
-import { Testimonial } from "../components";
+import { ContactUs, Scholarship, Testimonial } from "../components";
 import {
   Brans,
   CampusTour,
-  ContactUs,
   OurUniversity,
   PageHeading,
   PowerfulAlumni,
-  Scholarship,
 } from "./index";
 
 export default function About() {

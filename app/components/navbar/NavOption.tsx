@@ -27,7 +27,7 @@ const navMenuItesm: NavMenu[] = [
   { name: "About Us", link: "/aboutUs" },
   { name: "Courses", link: "/courses" },
   { name: "Blog", link: "/blog" },
-  { name: "Contact", link: "/Contact" },
+  { name: "Contact", link: "/contact" },
 ];
 
 const NavOption = () => {
@@ -67,13 +67,13 @@ const NavOption = () => {
                   Courses
                 </Link>
                 <Link
-                  href="#"
+                  href="/blog"
                   className=" text-slate-700 hover:text-secoundary transition"
                 >
                   Blog
                 </Link>
                 <Link
-                  href="#"
+                  href="/contact"
                   className=" text-slate-700 hover:text-secoundary transition"
                 >
                   Contact
