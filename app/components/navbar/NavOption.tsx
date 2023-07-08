@@ -1,6 +1,8 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
+import { usePathname } from "next/navigation";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -33,6 +35,7 @@ const navMenuItesm: NavMenu[] = [
 const NavOption = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [toggle, setToggle] = useState(false);
+  const currentRoute = usePathname();
 
   return (
     <div>
@@ -49,32 +52,50 @@ const NavOption = () => {
             >
               <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border   border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0   ">
                 <Link
-                  href="#"
-                  className=" text-slate-700 hover:text-secoundary transition"
+                  href="/"
+                  className={` hover:text-secoundary transition ${
+                    currentRoute === "/" ? " text-secoundary" : "text-slate-700"
+                  } `}
                 >
                   Home
                 </Link>
                 <Link
                   href="/aboutUs"
-                  className=" text-slate-700 hover:text-secoundary transition"
+                  className={` hover:text-secoundary transition ${
+                    currentRoute === "/aboutUs"
+                      ? " text-secoundary"
+                      : "text-slate-700"
+                  } `}
                 >
                   About Us
                 </Link>
                 <Link
                   href="/courses"
-                  className=" text-slate-700 hover:text-secoundary transition"
+                  className={` hover:text-secoundary transition ${
+                    currentRoute === "/courses"
+                      ? " text-secoundary"
+                      : "text-slate-700"
+                  } `}
                 >
                   Courses
                 </Link>
                 <Link
                   href="/blog"
-                  className=" text-slate-700 hover:text-secoundary transition"
+                  className={` hover:text-secoundary transition ${
+                    currentRoute === "/blog"
+                      ? " text-secoundary"
+                      : "text-slate-700"
+                  } `}
                 >
                   Blog
                 </Link>
                 <Link
                   href="/contact"
-                  className=" text-slate-700 hover:text-secoundary transition"
+                  className={` hover:text-secoundary transition ${
+                    currentRoute === "/contact"
+                      ? " text-secoundary"
+                      : "text-slate-700"
+                  } `}
                 >
                   Contact
                 </Link>
@@ -85,7 +106,7 @@ const NavOption = () => {
                 />
               </ul>
               <Link
-                href="#_"
+                href="/contact"
                 passHref
                 className="relative px-7 py-3 overflow-hidden font-medium text-white bg-secoundary   shadow-inner group lg:h-full flex items-center ml-6 "
               >
@@ -151,32 +172,48 @@ const NavOption = () => {
 
             <ul className=" flex flex-col gap-y-2">
               <Link
-                href=""
-                className=" text-start text-lg border-b  border-slate-700 pb-3 pr-[140px] hover:text-secoundary transition"
+                href="/"
+                className={`text-start text-lg border-b  border-slate-700 pb-3 pr-[140px] hover:text-secoundary transition ${
+                  currentRoute === "/" ? " text-secoundary" : "text-white"
+                }`}
               >
                 Home
               </Link>
               <Link
-                href=""
-                className=" text-start text-lg border-b  border-slate-700 pb-3 pr-[140px] hover:text-secoundary transition"
+                href="/aboutUs"
+                className={`text-start text-lg border-b  border-slate-700 pb-3 pr-[140px] hover:text-secoundary transition ${
+                  currentRoute === "/aboutUs"
+                    ? " text-secoundary"
+                    : "text-white"
+                }`}
               >
                 About Us
               </Link>
               <Link
-                href=""
-                className=" text-start text-lg border-b  border-slate-700 pb-3 pr-[140px] hover:text-secoundary transition"
+                href="/courses"
+                className={`text-start text-lg border-b  border-slate-700 pb-3 pr-[140px] hover:text-secoundary transition ${
+                  currentRoute === "/courses"
+                    ? " text-secoundary"
+                    : "text-white"
+                }`}
               >
                 Courses
               </Link>
               <Link
-                href=""
-                className=" text-start text-lg border-b  border-slate-700 pb-3 pr-[140px] hover:text-secoundary transition"
+                href="/blog"
+                className={`text-start text-lg border-b  border-slate-700 pb-3 pr-[140px] hover:text-secoundary transition ${
+                  currentRoute === "/blog" ? " text-secoundary" : "text-white"
+                }`}
               >
                 Blog
               </Link>
               <Link
-                href=""
-                className=" text-start text-lg border-b  border-slate-700 pb-3 pr-[140px] hover:text-secoundary transition"
+                href="/contact"
+                className={`text-start text-lg border-b  border-slate-700 pb-3 pr-[140px] hover:text-secoundary transition ${
+                  currentRoute === "/contact"
+                    ? " text-secoundary"
+                    : "text-white"
+                }`}
               >
                 Contact
               </Link>
@@ -227,7 +264,7 @@ const NavOption = () => {
             ></motion.div>
           </motion.button>
           <motion.ul
-            className=" absolute bg-white left-10 w-[250px] sm:w-[420px]    p-4  space-y-6 shadow-md"
+            className=" absolute bg-white w-full left-0    p-4  space-y-6 shadow-md"
             variants={{
               open: {
                 clipPath: "inset(0% 0% 0% 0% round 10px)",
@@ -253,7 +290,11 @@ const NavOption = () => {
             {navMenuItesm.map((item, index) => (
               <motion.li
                 key={index}
-                className=" uppercase text-[16px] text-gray-600 font-medium border-b pb-2 hover:text-secoundary transition"
+                className={` uppercase text-[16px]  font-medium border-b pb-2 hover:text-secoundary transition ${
+                  currentRoute === item?.link
+                    ? "text-secoundary"
+                    : "text-gray-600"
+                }`}
                 variants={itemVariants}
               >
                 <Link href={item?.link}>{item?.name}</Link>

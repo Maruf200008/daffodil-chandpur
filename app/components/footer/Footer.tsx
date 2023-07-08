@@ -8,9 +8,31 @@ import logo from "../../images/logo.png";
 import sBlogimg1 from "../../images/s-blogimg-01.png";
 import sBlogimg2 from "../../images/s-blogimg-02.png";
 const Footer = () => {
+  const footerLink = [
+    {
+      text: "Home",
+      href: "/",
+    },
+    {
+      text: "About Us",
+      href: "/aboutUs",
+    },
+    {
+      text: "Courses",
+      href: "/courses",
+    },
+    {
+      text: "Blog",
+      href: "/blog",
+    },
+    {
+      text: "Contact",
+      href: "/contact",
+    },
+  ];
   return (
     <>
-      <div className=" bg-[url('https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/footer-bg.png')] bg-center px-5 sm:px-14 lg:px-[50px] xl:px-28 py-[100px] bg-cover bg-no-repeat ">
+      <div className=" bg-[#00173c] px-5 sm:px-14 lg:px-[50px] xl:px-28 py-[100px] bg-cover bg-no-repeat ">
         <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className=" space-y-7  ">
             <div>
@@ -57,21 +79,15 @@ const Footer = () => {
               <div className=" w-[70px] h-[1px] bg-secoundary mt-2" />
             </div>
             <ul className=" flex flex-col gap-y-3 text-[#b2c0d8] font-semibold  ">
-              <Link href="" className="hover:text-secoundary transition">
-                Home
-              </Link>
-              <Link href="" className="hover:text-secoundary transition">
-                About Us
-              </Link>
-              <Link href="" className="hover:text-secoundary transition">
-                Courses
-              </Link>
-              <Link href="" className="hover:text-secoundary transition">
-                Blog
-              </Link>
-              <Link href="" className="hover:text-secoundary transition">
-                Contact
-              </Link>
+              {footerLink.map((data, index) => (
+                <Link
+                  key={index}
+                  href={data.href}
+                  className=" hover:text-secoundary transition"
+                >
+                  {data.text}
+                </Link>
+              ))}
             </ul>
           </div>
           <div className=" space-y-5  ">

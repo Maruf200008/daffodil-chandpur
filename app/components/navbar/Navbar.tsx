@@ -38,14 +38,14 @@ const Navbar = () => {
                 <Link
                   href=""
                   passHref
-                  className=" cursor-pointer hover:text-[#96d7fa] transition"
+                  className="cursor-pointer hover:text-[#96d7fa] transition"
                 >
                   <FaYoutube size={22} />
                 </Link>
               </div>
             </div>
-            <div className=" flex items-center gap-x-5  first-header">
-              <div className=" flex items-center pr-4 gap-x-3 text-white border-r">
+            <div className="flex items-center gap-x-5  first-header">
+              <div className="flex items-center pr-4 gap-x-3 text-white border-r">
                 <MdWifiCalling3 size={30} className=" z-20  text-secoundary" />
                 <div>
                   <p className=" text-[14px]">Call Now !</p>
@@ -53,11 +53,11 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <div className=" flex items-center gap-x-3 text-white second-header">
+              <div className="flex items-center gap-x-3 text-white second-header">
                 <IoIosMailUnread size={30} className="text-secoundary" />
                 <div>
-                  <p className=" text-[14px]">Email Now</p>
-                  <h2 className=" text-lg font-semibold">info@example.com</h2>
+                  <p className="text-[14px]">Email Now</p>
+                  <h2 className="text-lg font-semibold">info@example.com</h2>
                 </div>
               </div>
             </div>
