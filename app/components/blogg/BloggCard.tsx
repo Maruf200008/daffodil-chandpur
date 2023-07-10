@@ -1,18 +1,18 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { BiUser } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
 import { FaRegComments } from "react-icons/fa";
 import { MdOutlineDateRange } from "react-icons/md";
 
-interface Blog {
+type Blog = {
   img: string | StaticImageData;
   date: string;
   role: string;
   comment: string;
   title: string;
   desc: string;
-}
+};
 
 const BloggCard = ({ data }: { data: Blog }) => {
   const { img, date, role, comment, title, desc } = data;

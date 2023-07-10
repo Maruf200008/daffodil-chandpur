@@ -1,16 +1,26 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 
-const EventCard = ({ subject }) => {
+interface Subject {
+  img: string | StaticImageData;
+  date: string;
+  monthAndYear: string;
+  title: string;
+  description: string;
+  writenDate: string;
+  address: string;
+}
+const EventCard = ({ subject }: { subject: Subject }) => {
   const { img, date, monthAndYear, title, description, writenDate, address } =
     subject || {};
+
   return (
     <div className="   bg-[#deeef5] hover:bg-primary duration-300 transition group  overflow-hidden relative">
       <div className=" overflow-hidden ">
         <Image
           src={img}
-          alt=""
+          alt="Image"
           className=" group-hover:scale-125 overflow-hidden object-cover transition duration-500 ease-in-out delay-150 cursor-pointer"
         />
       </div>

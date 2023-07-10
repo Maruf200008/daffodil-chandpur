@@ -5,6 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { FiPhoneOutgoing } from "react-icons/fi";
 import { GoMail } from "react-icons/go";
 const CustomInqureForm = () => {
+  let rows: number = parseInt("10");
   return (
     <div className=" bg-[#6EC1E4]/25">
       <div className="lg:px-[50px] py-24 sm:px-16 md:py-28 xl:px-32 px-5 ">
@@ -55,7 +56,7 @@ const CustomInqureForm = () => {
               <div className="relative w-full ">
                 <textarea
                   name="message"
-                  rows="10"
+                  rows={rows}
                   className=" w-full rounded-md resize-none focus:outline-none p-4"
                   placeholder="Message..."
                 ></textarea>

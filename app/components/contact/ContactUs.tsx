@@ -5,6 +5,7 @@ const ContactUs = () => {
     title: string;
     desc: string;
   }
+  let rows: number = parseInt("5");
   const accordionData: Accordion[] = [
     {
       title: "01 Cras turpis felis, elementum sed mi at arcu ?",
@@ -67,7 +68,7 @@ const ContactUs = () => {
               />
               <textarea
                 name="message"
-                rows="7"
+                rows={rows}
                 className="focus:outline-none  rounded-md px-3 py-2 resize-none w-full"
                 placeholder="Message"
               />

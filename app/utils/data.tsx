@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import avatar from "../images/avatar1.png";
 import courseImg1 from "../images/couress-img-1.jpg";
 import courseImg2 from "../images/couress-img-2.jpg";
@@ -7,7 +8,7 @@ import courseImg5 from "../images/couress-img-5.jpg";
 import courseImg6 from "../images/couress-img-6.jpg";
 
 interface Article {
-  id: number;
+  id: string;
   title: string;
   img: string | StaticImageData;
   teacherImg: string | StaticImageData;
@@ -56,7 +57,7 @@ interface Article {
 
 const articleData: Article[] = [
   {
-    id: 1,
+    id: "1",
     title: "Biochemistry",
     img: courseImg1,
     teacherImg: avatar,
@@ -113,7 +114,7 @@ const articleData: Article[] = [
       "Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.",
   },
   {
-    id: 2,
+    id: "2",
     title: "Major in Economics",
     img: courseImg2,
     teacherImg: avatar,
@@ -170,7 +171,7 @@ const articleData: Article[] = [
       "Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.",
   },
   {
-    id: 3,
+    id: "3",
     title: "Business Media",
     img: courseImg3,
     teacherImg: avatar,
@@ -227,7 +228,7 @@ const articleData: Article[] = [
       "Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.",
   },
   {
-    id: 4,
+    id: "4",
     title: "Public Administration",
     img: courseImg4,
     teacherImg: avatar,
@@ -284,7 +285,7 @@ const articleData: Article[] = [
       "Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.",
   },
   {
-    id: 5,
+    id: "5",
     title: "Biotechnology",
     img: courseImg5,
     teacherImg: avatar,
@@ -341,7 +342,7 @@ const articleData: Article[] = [
       "Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.",
   },
   {
-    id: 6,
+    id: "6",
     title: "Corporate Finance",
     img: courseImg6,
     teacherImg: avatar,

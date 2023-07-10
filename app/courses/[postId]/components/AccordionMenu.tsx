@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { IoIosArrowBack, IoIosArrowDown } from "react-icons/io";
 
-const AccordionMenu = ({ title, desc }) => {
+const AccordionMenu = ({ title, desc }: { title: string; desc: string }) => {
   const [open, setOpen] = useState(false);
   return (
     <>

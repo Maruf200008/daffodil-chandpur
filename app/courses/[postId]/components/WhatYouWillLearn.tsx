@@ -1,19 +1,16 @@
 import Image from "next/image";
 import TickImg from "../../../images/tick.png";
 
-const WhatYouWillLearn = ({
-  data,
-}: {
-  data?: {
-    courceTitle2: string;
-    desc3: string;
-    desc4: string;
-    tickTitle1: string;
-    tickTitle2: string;
-    tickTitle3: string;
-    tickTitle4: string;
-  };
-}) => {
+type Data = {
+  courceTitle2: string;
+  desc3: string;
+  desc4: string;
+  tickTitle1: string;
+  tickTitle2: string;
+  tickTitle3: string;
+  tickTitle4: string;
+};
+const WhatYouWillLearn = ({ data }: { data: Data }) => {
   return (
     <>
       <div className=" space-y-5">

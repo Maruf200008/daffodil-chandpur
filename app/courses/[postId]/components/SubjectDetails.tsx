@@ -1,8 +1,9 @@
-const SubjectDetails = ({
-  data,
-}: {
-  data?: { desc1: string; desc2: string };
-}) => {
+type SubjectData = {
+  desc1: string;
+  desc2: string;
+};
+
+const SubjectDetails = ({ data }: { data: SubjectData }) => {
   return (
     <>
       <div className=" space-y-5">

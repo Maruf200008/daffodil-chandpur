@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { LuGraduationCap } from "react-icons/lu";
 import innerB1 from "../../images/inner_b1.jpg";
 import innerB2 from "../../images/inner_b2.jpg";

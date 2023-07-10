@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { LuGraduationCap } from "react-icons/lu";
 import eventImg1 from "../../images/evn-img-1.jpg";
 import eventImg2 from "../../images/evn-img-2.jpg";
@@ -8,7 +9,16 @@ import eventImg6 from "../../images/evn-img-6.jpg";
 import EventCard from "./EventCard";
 
 const Events = () => {
-  const subjects = [
+  interface Subject {
+    img: string | StaticImageData;
+    date: string;
+    title: string;
+    monthAndYear: string;
+    description: string;
+    address: string;
+    writenDate: string;
+  }
+  const subjects: Subject[] = [
     {
       img: eventImg1,
       date: "20",

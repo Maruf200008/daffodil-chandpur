@@ -1,30 +1,46 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import AccordionMenu from "./AccordionMenu";
 import StudyOptions from "./StudyOptions";
 import SubjectDetails from "./SubjectDetails";
 import WhatYouWillLearn from "./WhatYouWillLearn";
 
-const CourseOverview = ({
-  data,
-}: {
-  data?: {
-    img: string | StaticImageData;
-    teacherImg: string | StaticImageData;
-    name: string;
-    roll: string;
-    degree: string;
-    subj: string;
-    courceFee: string;
-    courceTitle4: string;
-    desc5: string;
-    accordionTitle1: string;
-    accordionDec1: string;
-    accordionTitle2: string;
-    accordionDec2: string;
-    accordionTitle3: string;
-    accordionDec3: string;
-  };
-}) => {
+interface CourceData {
+  img: string | StaticImageData;
+  teacherImg: string | StaticImageData;
+  name: string;
+  roll: string;
+  degree: string;
+  subj: string;
+  courceFee: string;
+  courceTitle4: string;
+  desc5: string;
+  accordionTitle1: string;
+  accordionDec1: string;
+  accordionTitle2: string;
+  accordionDec2: string;
+  accordionTitle3: string;
+  accordionDec3: string;
+  desc1: string;
+  desc2: string;
+  courceTitle2: string;
+  desc3: string;
+  desc4: string;
+  tickTitle1: string;
+  tickTitle2: string;
+  tickTitle3: string;
+  tickTitle4: string;
+  courceTitle3: string;
+  tableTitle1: string;
+  tableTitle2: string;
+  tableTitle3: string;
+  tableData1: string;
+  tableData2: string;
+  tableData3: string;
+  tableData4: string;
+  tableData5: string;
+  tableData6: string;
+}
+const CourseOverview = ({ data }: { data: CourceData }) => {
   return (
     <div className="">
       <div className=" space-y-10">

@@ -4,20 +4,17 @@ import { BsArrowRight, BsClock } from "react-icons/bs";
 import { FiUser } from "react-icons/fi";
 import { MdLanguage } from "react-icons/md";
 
-const CourseFeatures = ({
-  data,
-}: {
-  data?: {
-    courceFee: string;
-    decressCourceFee: string;
-    instructor: string;
-    lectures: number;
-    duration: string;
-    enrolled: string;
-    language: string;
-    discount: string;
-  };
-}) => {
+type Data = {
+  courceFee: string;
+  decressCourceFee: string;
+  instructor: string;
+  lectures: number;
+  duration: string;
+  enrolled: string;
+  language: string;
+  discount: string;
+};
+const CourseFeatures = ({ data }: { data: Data }) => {
   return (
     <div className="  lg:px-5 overscroll-contain    ">
       <div className="rounded-md overflow-hidden  shadow-xl relative  ">

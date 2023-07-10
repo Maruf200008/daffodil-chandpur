@@ -1,6 +1,6 @@
 "use client";
 // Import Swiper React components
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import qt from "../../images/qt-icon.png";
 

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { BiCalendar, BiUser } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
