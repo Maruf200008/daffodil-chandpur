@@ -25,7 +25,7 @@ const WhatYouWillLearn = ({
           <p>{data?.desc4}</p>
 
           <div className=" space-y-5">
-            <div className=" grid grid-cols-2 items-center gap-10">
+            <div className=" grid lg:grid-cols-2 items-center gap-5 lg:gap-10">
               <div className=" flex items-center gap-3">
                 <div className=" border-2 rounded-full p-1">
                   <Image src={TickImg} alt="TickImg" width={15} />
@@ -39,14 +39,14 @@ const WhatYouWillLearn = ({
                 <p>{data?.tickTitle2}</p>
               </div>
             </div>
-            <div className=" grid grid-cols-2 items-center gap-10">
-              <div className=" flex items-center gap-3">
+            <div className=" grid lg:grid-cols-2 items-center gap-5 lg:gap-10">
+              <div className=" flex  items-center gap-3">
                 <div className=" border-2 rounded-full p-1">
                   <Image src={TickImg} alt="TickImg" width={15} />
                 </div>
                 <p>{data?.tickTitle3}</p>
               </div>
-              <div className=" flex items-center gap-3">
+              <div className=" flex   items-center gap-3">
                 <div className=" border-2 rounded-full p-1">
                   <Image src={TickImg} alt="TickImg" width={15} />
                 </div>

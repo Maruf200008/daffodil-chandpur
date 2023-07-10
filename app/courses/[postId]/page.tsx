@@ -8,14 +8,12 @@ type Params = {
 };
 const DynamicPage = ({ params }: { params?: { postId: string } }) => {
   const { postId } = params || {};
-  console.log(postId);
 
   return (
     <>
       {dynamicData
         .filter((data) => data.id == postId)
         .map((data) => {
-          console.log(data);
           return (
             <div key={data.id}>
               <PageHeading

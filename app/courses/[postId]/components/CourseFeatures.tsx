@@ -19,7 +19,7 @@ const CourseFeatures = ({
   };
 }) => {
   return (
-    <div className="  px-5 overscroll-contain    ">
+    <div className="  lg:px-5 overscroll-contain    ">
       <div className="rounded-md overflow-hidden  shadow-xl relative  ">
         <div className="     ">
           <div className=" bg-primary p-3">

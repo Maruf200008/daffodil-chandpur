@@ -26,7 +26,7 @@ const CourseOverview = ({
   };
 }) => {
   return (
-    <div>
+    <div className="">
       <div className=" space-y-10">
         <Image src={data?.img} alt="courceImg" />
         <div className=" bg-primary rounded-md px-5 py-4">
